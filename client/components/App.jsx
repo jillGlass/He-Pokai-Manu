@@ -1,9 +1,11 @@
 import React from 'react'
 import { Grommet } from 'grommet'
+import Perching from './Perching'
+
 const App = () => {
   return (
     <Grommet>
-      <h1>React development has begun!</h1>
+      <Perching />
     </Grommet>
   )
 }
