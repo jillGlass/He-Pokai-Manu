@@ -1,13 +1,20 @@
 import React from 'react'
 import { Grommet } from 'grommet'
-
-import { BirdHeader } from './BirdHeader'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Perching from './Perching'
+import Instructions from './Instructions'
+import BirdInfo from './BirdInfo'
 
 const App = () => {
   return (
     <Grommet>
-      <h1>React development has begun!</h1>
-      <BirdHeader/>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Perching}/>
+          <Route exact path='/instructions' component={Instructions}/>
+          <Route exact path='/details' component={BirdInfo}/>
+        </Switch>
+      </Router>
     </Grommet>
   )
 }
