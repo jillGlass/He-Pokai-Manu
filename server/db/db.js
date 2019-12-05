@@ -8,21 +8,22 @@ module.exports = {
   getBirds
 }
 
-function getBird (title, db = connection) {
-  return db('birds', title)
-    .select('Bird_ID', 'name', 'found')
-}
-
 function getBirds (db = connection) {
   return db('birds')
-    .select('Bird_ID', 'name', 'found')
+    .select('name', 'image', 'found')
 }
 
-function foundbird (title, db = connection) {
+function getBird (id, db = connection) {
   return db('birds')
-    .where('bird_ID', title)
-    .update([
-      { found: '1'
-      }
-    ])
+    .where('bird_id', id)
+    .select('name', 'found', 'info', 'image')
+    .first()
+}
+
+function foundbird (id, db = connection) {
+  return db('birds')
+    .where('bird_id', id)
+    .update(
+      { found: true
+      })
 }

@@ -12,7 +12,7 @@ describe('Bird database function tests', () => {
   it('get birds returns an array the length of all the bird info', () => {
     expect.assertions(1)
 
-    const expected = 2
+    const expected = 10
 
     return db.getBirds(testDb)
       .then(birds => {
@@ -20,17 +20,16 @@ describe('Bird database function tests', () => {
         expect(actual).toBe(expected)
       })
   })
-  it('get bird returns the details of a single bird', ( => {
+  it('get bird returns the details of a single bird', () => {
     expect.assertions(1)
 
     const id = 1
 
     const expected = {
-      bird_id:  ,
-      name:   ,
-      bird_info: ,
-      bird image link: ,
-      found:
+      name: 'Tui',
+      info: 'Tui are unique to New Zealand and belong to the honey-eater family which means that they feed mainly on nectar from the flowers of native plants. They can be quite aggressive! They will chase other Tui away from food and tasty nectar. Tui are found throughout the North, South and Stewart Islands of New Zealand.',
+      image: null,
+      found: 0
     }
 
     return db.getBird(id, testDb)
@@ -38,14 +37,16 @@ describe('Bird database function tests', () => {
         const actual = bird
         expect(actual).toEqual(expected)
       })
-  }))
-  
-it('found birds returns a boolean value of true for found', () => {
-  expect.assertions(1)
+  })
 
-  return db.foundbird(bird_id, testDb)
-    .then(bird => {
-      expect(bird.found).toBe(1)
-    })
-})
+  it('foundbirds function changes the boolean value of the selected bird to true', () => {
+    expect.assertions(1)
+
+    const id = 2
+
+    return db.foundbird(id, testDb)
+      .then(bird => {
+        expect(bird).toBeTruthy()
+      })
+  })
 })
