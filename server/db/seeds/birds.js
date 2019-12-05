@@ -4,7 +4,7 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('birds').insert([
-        { bird_id: 1, name: 'Tui', found: false }
+        { bird_id: 1, name: 'Tui', info: '' found: false }
       ])
     })
 };
