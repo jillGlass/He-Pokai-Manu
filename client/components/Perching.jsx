@@ -1,16 +1,10 @@
 import React from 'react'
-import { Grommet } from 'grommet'
 import BirdHeader from './BirdHeader'
 
-
-
 const Perching = () => (
- 
-    <BirdHeader />
-    {/* <BirdGrid />
-    <MainFooter /> */}
 
-  
+  <BirdHeader />
+
 )
 
 export default Perching
