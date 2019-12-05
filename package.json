@@ -8,10 +8,11 @@
   "license": "ISC",
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
-    "dev": "node server & webpack --watch",
+    "dev": "nodemon . & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "knex": "knex --knexfile server/db/knexfile.js"
   },
   "babel": {
     "presets": [
@@ -50,6 +51,7 @@
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.4.3",
     "jest": "^24.7.1",
+    "nodemon": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack": "^4.29.6",
