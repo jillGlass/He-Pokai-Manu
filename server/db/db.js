@@ -3,19 +3,21 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
-  getBirds
+  getBirds,
+  foundbird
 }
 
 function getBirds (db = connection) {
   return db('birds')
     .select('Bird_ID', 'name', 'found')
+    .then(console.log())
 }
 
-function foundbird (title, db=connection) {
+function foundbird (title, db = connection) {
   return db('birds')
-  .where({'birds.title', title})
-  .insert([
-    {
-    }
-  ])
+    .where('bird_ID', title)
+    .update([
+      { found: '1'
+      }
+    ])
 }
