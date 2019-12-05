@@ -5,8 +5,7 @@ const CircleButton = () => {
   return (
     <Grommet>
       <div className="circleButton">
-        <h1>1</h1>
-        {/* <img src={ 'images/tui.png' } /> */}
+        <img src={ 'images/tui.png' } />
       </div>
     </Grommet>
   )

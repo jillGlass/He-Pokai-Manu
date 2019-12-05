@@ -11,21 +11,27 @@ const BirdGrid = () => {
       <Grid
         rows={['fit', 'fit', 'fit']}
         columns={['fit', 'fit']}
-        gap='small'
+        gap='large'
         // align="center"
+        justify='center'
         alignContent='center'
         // alignSelf='center'
+        // grid-template-columns={'auto-fill', 'minmax(200px, 1fr'}
 
         areas={[
           { name: 'main', start: [1, 1], end: [1, 1] }
         ]}
       >
-        <Circle gridArea="main"/>
-        <Circle gridArea="main"/>
-        <Circle gridArea="main"/>
-        <Circle gridArea="main"/>
-        <Circle gridArea="main"/>
-        <Circle gridArea="main"/>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        <Circle gridArea="main"><h2>Tui</h2></Circle>
+        
       </Grid>
 
     </Grommet>

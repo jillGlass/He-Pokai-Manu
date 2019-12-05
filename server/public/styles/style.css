@@ -1,9 +1,14 @@
+body {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
 .circleButton {
   width: 300px;
   height: 300px; 
   border-radius: 50%;
   overflow: hidden;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(214, 130, 5);
   /* border: 1px solid black;
   margin-left: 10px;
