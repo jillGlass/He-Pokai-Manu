@@ -1,8 +1,14 @@
 import React from 'react'
+import { Grommet } from 'grommet'
+
+import { BirdHeader } from './BirdHeader'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <Grommet>
+      <h1>React development has begun!</h1>
+      <BirdHeader/>
+    </Grommet>
   )
 }
 
