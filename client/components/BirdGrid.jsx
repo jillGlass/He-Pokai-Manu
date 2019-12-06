@@ -1,26 +1,27 @@
 import React from 'react'
 import { Grid } from 'semantic-ui-react'
-import Circle from './Circle'
+// import Circle from './Circle'
+import BirdContainer from './BirdContainer'
 
 class BirdGrid extends React.Component {
   render () {
     return (
-    <>
-      <Grid centered doubling columns={5}>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-        <Circle><h2>Tui</h2></Circle>
-      </Grid>
-    </>
+      <React.Fragment>
+        <Grid className='gridWrap' columns={2} doubling>
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+          <BirdContainer />
+
+        </Grid>
+
+      </React.Fragment>
     )
   }
 }

@@ -1,16 +1,78 @@
 body {
   padding: 0 auto;
   margin: 0 auto;
+  background-color:  #29335C  !important;
 }
 
-img {
+.gridWrap {
+  justify-content: space-evenly;
+  margin-top: 0!important;
+}
+
+.ui.grid {
+  margin-top: 0;
+}
+
+/* img {
+  height: auto;
+  width: 120px !important;
+  border-radius: 50%;
+  background-color:  #29335C;
+} */
+
+/* .ui.card,
+.ui.cards>.card {
+  background-color: #29335C ;
+} */
+
+/* .birdcard {
+  width: 120px !important;
+  text-align: center;
+  float: center;
+  background-color:  #29335C;
+  border: 0px;
+} */
+
+/* .content {
+  padding: 0px !important;
+  background-color:  #29335C;
+  border: 0px;
+} */
+
+.header {
+  background-color:  #29335C;
+}
+
+
+
+
+.birdContainer {
+  display: grid;
+  flex-basis: auto;
+  background-color: #29335C;
+  text-align: center;
+  align-content: space-around;
+  grid-template-areas: 
+  "circleImage"
+  "circleTitle";
+
+}
+
+.circleImage {
+  grid-area: circleImage;
+  margin-top: 20px;
   height: auto;
   width: 120px;
   border-radius: 50%;
 }
 
-.birdcard {
-  width: 150px !important;
+.circleTitle {
+  grid-area: circleTitle;
+  font-size: 32px;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: .7rem;
+  text-align: center;
 }
 
 /* .circleButton {
@@ -35,7 +97,6 @@ img {
 */
   
 
-'
 /* button press */
 /* .circleButton:active
 
@@ -43,4 +104,3 @@ img {
  {
    border-width;
 } */
-'
