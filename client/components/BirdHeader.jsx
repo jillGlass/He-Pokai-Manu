@@ -10,7 +10,6 @@ class BirdHeader extends React.Component {
           <Menu.Item>
             He Pokai Manu
           </Menu.Item>
-
         </Container>
       </Menu>
 
