@@ -18,12 +18,20 @@ body {
   border-radius: 18px;
   width: 14rem;
   height: 3rem;
+  background-color:#F0CEA0 !important;
+  flex-direction:row;
+  justify-content:center;
+  color: white !important;
+}
+
+.backBtnStyle {
+  border-radius: 18px;
+  width: 14rem;
+  height: 3rem;
   background-color:#F3A712 !important;
   flex-direction:row;
   justify-content:center;
   color: white !important;
-  
-  
 }
 
 .footer {
