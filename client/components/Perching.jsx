@@ -1,19 +1,12 @@
 import React from 'react'
 import BirdHeader from './BirdHeader'
-
-const myTheme = {
-  global: {
-    font: {
-      family: 'Omnes-pro'
-    }
-  }
-}
+import BirdGrid from './BirdGrid'
 
 const Perching = () => (
-    <BirdHeader />
-    {/* <BirdGrid />
-    <MainFooter /> */}
-
+<>
+  <BirdHeader />
+  <BirdGrid />
+</>
 )
 
 export default Perching
