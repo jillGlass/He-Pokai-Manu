@@ -1,15 +1,5 @@
 import React from 'react'
 
-import { Grommet, Box, Anchor } from 'grommet'
-
-const myTheme = {
-  global: {
-    font: {
-      family: 'Omnes-pro'
-    }
-  }
-}
-
 const BirdHeader = () => (
   <Grommet theme = {myTheme}>
     <h1>
