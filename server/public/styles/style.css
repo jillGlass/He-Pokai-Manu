@@ -2,6 +2,7 @@ body {
   padding: 0 auto;
   margin: 0 auto;
   background-color:  #29335C  !important;
+  font-family: Omnes;
 }
 
 .gridWrap {
@@ -13,11 +14,33 @@ body {
   margin-top: 0;
 }
 
-
-.header {
-  background-color:  #29335C;
+.foundBtnStyle {
+  border-radius: 18px;
+  width: 14rem;
+  height: 3rem;
+  background-color:#F3A712 !important;
+  flex-direction:row;
+  justify-content:center;
+  color: white !important;
+  
+  
 }
 
+.footer {
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+
+.centerHeader {
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
 
 .birdContainer {
   display: grid;
