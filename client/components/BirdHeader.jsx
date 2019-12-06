@@ -1,16 +1,21 @@
 import React from 'react'
+import { Menu, Container } from 'semantic-ui-react'
 
-const BirdHeader = () => (
-  <Grommet theme = {myTheme}>
-    <h1>
-      <link rel="stylesheet" href="https://use.typekit.net/abr7ohz.css" />
-      <Box align="center" background="#F3A712" pad="small">
-        <Box direction="row" gap="medium" >
-          <Anchor color="#FFFFFF">POKAI-MANU</Anchor>
-        </Box>
-      </Box>
-    </h1>
-  </Grommet>
-)
+class BirdHeader extends React.Component {
+  render () {
+    return (
+
+      <Menu borderless fixed='top' inverted style = {{ backgroundColor: '#F3A712' }}>
+        <Container>
+          <Menu.Item>
+            He Pokai Manu
+          </Menu.Item>
+
+        </Container>
+      </Menu>
+
+    )
+  }
+}
 
 export default BirdHeader

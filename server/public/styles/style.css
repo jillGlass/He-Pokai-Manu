@@ -2,6 +2,7 @@ body {
   padding: 0 auto;
   margin: 0 auto;
   background-color:  #29335C  !important;
+  font-family: Omnes;
 }
 
 .gridWrap {
@@ -18,6 +19,10 @@ body {
   background-color:  #29335C;
 }
 
+.centerHeader {
+  justify-content: space-evenly;
+  text-align: center;
+}
 
 .birdContainer {
   display: grid;
