@@ -14,6 +14,10 @@ body {
   margin-top: 0;
 }
 
+.iconInstructions {
+  background-color: white !important;
+}
+
 .birdInfoBtnStyle {
   border-radius: 18px;
   width: 273px;
