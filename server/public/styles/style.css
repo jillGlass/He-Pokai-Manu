@@ -1,13 +1,16 @@
-/* body {
+body {
   padding: 0 auto;
   margin: 0 auto;
-} */
+}
 
 img {
   height: auto;
   width: 120px;
   border-radius: 50%;
+}
 
+.birdcard {
+  width: 150px !important;
 }
 
 /* .circleButton {
@@ -32,9 +35,12 @@ img {
 */
   
 
-
+'
 /* button press */
 /* .circleButton:active
+
+
  {
    border-width;
 } */
+'
