@@ -35,6 +35,9 @@ router.put('/:id', (req, res) => {
     .then((s) => {
       res.json(s)
     })
+    .catch(err => {
+      res.status(500).send('NEVER HAVE I EVER DATABASE ERROR: ' + err.message)
+    })
 })
 
 module.exports = router
