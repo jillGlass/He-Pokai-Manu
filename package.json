@@ -31,8 +31,6 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "grommet": "^2.8.1",
-    "grommet-icons": "^4.4.0",
     "knex": "^0.20.3",
     "react-router-dom": "^5.1.2",
     "sqlite3": "^4.1.0",
