@@ -14,10 +14,18 @@ body {
   margin-top: 0;
 }
 
+.birdInfoBtnStyle {
+  border-radius: 18px;
+  width: 273px;
+  background-color:#DB2B39 !important;
+  flex-direction:row;
+  justify-content:center;
+  color: white !important;
+}
+
 .foundBtnStyle {
   border-radius: 18px;
-  width: 14rem;
-  height: 3rem;
+  width: 313px;
   background-color:#F0CEA0 !important;
   flex-direction:row;
   justify-content:center;
@@ -26,8 +34,7 @@ body {
 
 .backBtnStyle {
   border-radius: 18px;
-  width: 14rem;
-  height: 3rem;
+  width: 180px;
   background-color:#F3A712 !important;
   flex-direction:row;
   justify-content:center;
