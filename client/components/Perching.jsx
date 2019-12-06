@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grommet } from 'grommet'
 import BirdHeader from './BirdHeader'
 
 const myTheme = {
@@ -11,12 +10,10 @@ const myTheme = {
 }
 
 const Perching = () => (
-  <Grommet theme = {myTheme}>
     <BirdHeader />
     {/* <BirdGrid />
     <MainFooter /> */}
 
-  </Grommet>
 )
 
 export default Perching
