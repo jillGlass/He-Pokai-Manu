@@ -4,7 +4,7 @@ const connection = require('knex')(config)
 
 module.exports = {
   getBird,
-  foundbird,
+  foundBird,
   getBirds
 }
 
@@ -20,7 +20,7 @@ function getBird (id, db = connection) {
     .first()
 }
 
-function foundbird (id, db = connection) {
+function foundBird (id, db = connection) {
   return db('birds')
     .where('bird_id', id)
     .update(

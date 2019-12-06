@@ -44,7 +44,7 @@ describe('Bird database function tests', () => {
 
     const id = 2
 
-    return db.foundbird(id, testDb)
+    return db.foundBird(id, testDb)
       .then(bird => {
         expect(bird).toBeTruthy()
       })
