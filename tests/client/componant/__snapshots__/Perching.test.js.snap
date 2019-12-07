@@ -47,60 +47,99 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                 Can you find them all?
               </div>
             </MenuItem>
-            <InstructionsBtn>
-              <Button
-                as="button"
-                className="iconInstructions"
-                icon={true}
-                size="big"
-              >
-                <Ref
-                  innerRef={
-                    Object {
-                      "current": <button
-                        class="ui big icon button iconInstructions"
-                      >
-                        <i
-                          aria-hidden="true"
-                          class="question circle outline icon"
-                        />
-                      </button>,
-                    }
+            <HashRouter>
+              <Router
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
                   }
+                }
+              >
+                <Link
+                  to="/instructions"
                 >
-                  <RefFindNode
-                    innerRef={
-                      Object {
-                        "current": <button
-                          class="ui big icon button iconInstructions"
-                        >
-                          <i
-                            aria-hidden="true"
-                            class="question circle outline icon"
-                          />
-                        </button>,
-                      }
-                    }
+                  <LinkAnchor
+                    href="#/instructions"
+                    navigate={[Function]}
                   >
-                    <button
-                      className="ui big icon button iconInstructions"
+                    <a
+                      href="#/instructions"
                       onClick={[Function]}
                     >
-                      <Icon
-                        as="i"
-                        name="question circle outline"
-                      >
-                        <i
-                          aria-hidden="true"
-                          className="question circle outline icon"
-                          onClick={[Function]}
-                        />
-                      </Icon>
-                    </button>
-                  </RefFindNode>
-                </Ref>
-              </Button>
-            </InstructionsBtn>
+                      <InstructionsBtn>
+                        <Button
+                          as="button"
+                          className="iconInstructions"
+                          icon={true}
+                          size="big"
+                        >
+                          <Ref
+                            innerRef={
+                              Object {
+                                "current": <button
+                                  class="ui big icon button iconInstructions"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    class="question circle outline icon"
+                                  />
+                                </button>,
+                              }
+                            }
+                          >
+                            <RefFindNode
+                              innerRef={
+                                Object {
+                                  "current": <button
+                                    class="ui big icon button iconInstructions"
+                                  >
+                                    <i
+                                      aria-hidden="true"
+                                      class="question circle outline icon"
+                                    />
+                                  </button>,
+                                }
+                              }
+                            >
+                              <button
+                                className="ui big icon button iconInstructions"
+                                onClick={[Function]}
+                              >
+                                <Icon
+                                  as="i"
+                                  name="question circle outline"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="question circle outline icon"
+                                    onClick={[Function]}
+                                  />
+                                </Icon>
+                              </button>
+                            </RefFindNode>
+                          </Ref>
+                        </Button>
+                      </InstructionsBtn>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </Router>
+            </HashRouter>
           </div>
         </Container>
       </div>

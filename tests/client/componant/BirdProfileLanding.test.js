@@ -15,7 +15,7 @@ describe('BirdProfile component test', () => {
   it('BirdProfile contains header, image, found, bird info and back button components', () => {
     // Arrange
     const image = mockBirdProfileProps
-    const expected = [<BirdHeader/>, image, <BirdProfileTitle />,
+    const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />,
       <FoundBtn />,
       <BirdInfoBtn />,
       <BackBtn />]
@@ -30,6 +30,7 @@ describe('BirdProfile component test', () => {
     // Arrange
     const image = mockBirdProfileProps
     const expected = { image: 'image' }
+
     // Act
     const wrapper = mount(<BirdProfile/>)
     const actual = wrapper.setProps({ image: image })
@@ -37,6 +38,6 @@ describe('BirdProfile component test', () => {
 
     // Assert
     expect(actual).hasOwnProperty(expected.image)
-    expect(actualInfo).toContain(image)
+    expect(actualInfo).toContain('Tui')
   })
 })

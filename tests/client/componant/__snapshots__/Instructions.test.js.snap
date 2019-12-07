@@ -42,7 +42,7 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
   <p
     className="instructions"
   >
-     He Pokai-Manu is a treasure-hunt game for birds in New Zelands. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. 
+     He Pokai-Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. 
   </p>
   <br />
   <p
@@ -56,44 +56,83 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
   >
     How many can you find?
   </p>
-  <BackBtn>
-    <Button
-      as="button"
-      className="backBtnStyle"
-      size="big"
-    >
-      <Ref
-        innerRef={
-          Object {
-            "current": <button
-              class="ui big button backBtnStyle"
-            >
-              Back
-            </button>,
-          }
+  <HashRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
         }
+      }
+    >
+      <Link
+        to="/"
       >
-        <RefFindNode
-          innerRef={
-            Object {
-              "current": <button
-                class="ui big button backBtnStyle"
-              >
-                Back
-              </button>,
-            }
-          }
+        <LinkAnchor
+          href="#/"
+          navigate={[Function]}
         >
-          <button
-            className="ui big button backBtnStyle"
+          <a
+            href="#/"
             onClick={[Function]}
           >
-            Back
-          </button>
-        </RefFindNode>
-      </Ref>
-    </Button>
-  </BackBtn>
+            <BackBtn>
+              <Button
+                as="button"
+                className="backBtnStyle"
+                size="big"
+              >
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui big button backBtnStyle"
+                      >
+                        Back
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big button backBtnStyle"
+                        >
+                          Back
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui big button backBtnStyle"
+                      onClick={[Function]}
+                    >
+                      Back
+                    </button>
+                  </RefFindNode>
+                </Ref>
+              </Button>
+            </BackBtn>
+          </a>
+        </LinkAnchor>
+      </Link>
+    </Router>
+  </HashRouter>
   <MainFooter>
     <Menu
       fixed="bottom"
@@ -128,60 +167,6 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
                 Can you find them all?
               </div>
             </MenuItem>
-            <InstructionsBtn>
-              <Button
-                as="button"
-                className="iconInstructions"
-                icon={true}
-                size="big"
-              >
-                <Ref
-                  innerRef={
-                    Object {
-                      "current": <button
-                        class="ui big icon button iconInstructions"
-                      >
-                        <i
-                          aria-hidden="true"
-                          class="question circle outline icon"
-                        />
-                      </button>,
-                    }
-                  }
-                >
-                  <RefFindNode
-                    innerRef={
-                      Object {
-                        "current": <button
-                          class="ui big icon button iconInstructions"
-                        >
-                          <i
-                            aria-hidden="true"
-                            class="question circle outline icon"
-                          />
-                        </button>,
-                      }
-                    }
-                  >
-                    <button
-                      className="ui big icon button iconInstructions"
-                      onClick={[Function]}
-                    >
-                      <Icon
-                        as="i"
-                        name="question circle outline"
-                      >
-                        <i
-                          aria-hidden="true"
-                          className="question circle outline icon"
-                          onClick={[Function]}
-                        />
-                      </Icon>
-                    </button>
-                  </RefFindNode>
-                </Ref>
-              </Button>
-            </InstructionsBtn>
           </div>
         </Container>
       </div>
