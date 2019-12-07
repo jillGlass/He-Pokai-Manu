@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { mount } from 'enzyme'
+import toJson from 'enzyme-to-json'
 
 import Instructions from '../../../client/components/Instructions'
 
@@ -13,5 +15,10 @@ describe('<Instructions /> component test', () => {
     const actual = wrapper.text()
     // Assert
     expect(actual).toContain(expected)
+  })
+  it('render unchanged from previous snapshot', () => {
+    const wrapper = mount(<Instructions/>)
+
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })
