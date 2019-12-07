@@ -1,15 +1,13 @@
 import React from 'react'
-// import BirdHeader from './BirdHeader'
-// import BirdGrid from './BirdGrid'
-// import MainFooter from './MainFooter'
-import BirdProfile from './BirdProfile'
+import BirdHeader from './BirdHeader'
+import BirdGrid from './BirdGrid'
+import MainFooter from './MainFooter'
 
 const Perching = () => (
 <>
-  {/* <BirdHeader />
+  <BirdHeader />
   <BirdGrid />
-  <MainFooter /> */}
-  <BirdProfile />
+  <MainFooter />
 
 </>
 )
