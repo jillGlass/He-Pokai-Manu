@@ -1,6 +1,6 @@
 import React from 'react'
 import BirdHeader from './BirdHeader'
-import MainFooter from './MainFooter'
+import SecondaryFooter from './SecondaryFooter'
 import BackBtn from './BackBtn'
 
 const Instructions = () => (
@@ -12,7 +12,7 @@ const Instructions = () => (
         <br></br>
         <p className="instructions">How many can you find?</p>
       <BackBtn/>
-      <MainFooter />
+      <SecondaryFooter />
     </>
 )
 
