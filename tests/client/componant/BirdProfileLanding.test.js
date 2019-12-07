@@ -26,17 +26,5 @@ describe('BirdProfile component test', () => {
     // Assert
     expect(actual).toBeTruthy()
   })
-  it('BirdProfile component has expected props', () => {
-    // Arrange
-    const image = mockBirdProfileProps
-    const expected = { image: 'image' }
-    // Act
-    const wrapper = mount(<BirdProfile/>)
-    const actual = wrapper.setProps({ image: image })
-    const actualInfo = wrapper.text()
-
-    // Assert
-    expect(actual).hasOwnProperty(expected.image)
-    expect(actualInfo).toContain(image)
-  })
+ 
 })
