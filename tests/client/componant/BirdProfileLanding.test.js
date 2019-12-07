@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import BirdProfile from '../../../client/components/BirdProfile'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BirdProfileTitle from '../../../client/components/BirdProfileTitle'
@@ -26,5 +27,9 @@ describe('BirdProfile component test', () => {
     // Assert
     expect(actual).toBeTruthy()
   })
- 
+  it('render unchanged from previous snapshot', () => {
+    const wrapper = mount(<BirdProfile/>)
+
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 })
