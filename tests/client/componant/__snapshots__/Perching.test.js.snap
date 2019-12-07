@@ -2,43 +2,6 @@
 
 exports[`<Perching /> component test render unchanged from previous snapshot 1`] = `
 <Perching>
-  <BirdHeader>
-    <Menu
-      borderless={true}
-      className="centerHeader"
-      fixed="top"
-      inverted={true}
-      style={
-        Object {
-          "backgroundColor": "#F3A712",
-        }
-      }
-    >
-      <div
-        className="ui borderless inverted top fixed centerHeader menu"
-        style={
-          Object {
-            "backgroundColor": "#F3A712",
-          }
-        }
-      >
-        <Container>
-          <div
-            className="ui container"
-          >
-            <MenuItem>
-              <div
-                className="item"
-                onClick={[Function]}
-              >
-                He Pokai Manu
-              </div>
-            </MenuItem>
-          </div>
-        </Container>
-      </div>
-    </Menu>
-  </BirdHeader>
   <BirdGrid>
     <Grid
       className="gridWrap"
@@ -47,238 +10,7 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
     >
       <div
         className="ui doubling two column grid gridWrap"
-      >
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-        <BirdCircle>
-          <div
-            className="wrapperBirds"
-          >
-            <div
-              className="birdContainer"
-            >
-              <div
-                className="circleImage"
-              >
-                <img
-                  className="circleImage"
-                  src="images/tui.png"
-                />
-              </div>
-              <div
-                className="circleTitle"
-              >
-                Tui
-              </div>
-            </div>
-          </div>
-        </BirdCircle>
-      </div>
+      />
     </Grid>
   </BirdGrid>
   <MainFooter>
@@ -310,9 +42,65 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                 className="item"
                 onClick={[Function]}
               >
-                You have found 6 birds! Can you find them all?
+                You have found 6 birds!
+                <br />
+                Can you find them all?
               </div>
             </MenuItem>
+            <InstructionsBtn>
+              <Button
+                as="button"
+                className="iconInstructions"
+                icon={true}
+                size="big"
+              >
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui big icon button iconInstructions"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="question circle outline icon"
+                        />
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big icon button iconInstructions"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="question circle outline icon"
+                          />
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui big icon button iconInstructions"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        as="i"
+                        name="question circle outline"
+                      >
+                        <i
+                          aria-hidden="true"
+                          className="question circle outline icon"
+                          onClick={[Function]}
+                        />
+                      </Icon>
+                    </button>
+                  </RefFindNode>
+                </Ref>
+              </Button>
+            </InstructionsBtn>
           </div>
         </Container>
       </div>
