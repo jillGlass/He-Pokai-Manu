@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu, Container } from 'semantic-ui-react'
-import InstructionsBtn, { instructionsBtn } from './InstructionsBtn'
+import InstructionsBtn from './InstructionsBtn'
+import { Link } from 'react-router-dom'
 
 class MainFooter extends React.Component {
   state = {
@@ -17,7 +18,9 @@ class MainFooter extends React.Component {
             <br></br>
             Can you find them all?
           </Menu.Item>
-          <InstructionsBtn />
+          <Link to='/instructions'>
+            <InstructionsBtn />
+          </Link>
         </Container>
       </Menu>
     )
