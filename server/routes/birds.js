@@ -5,7 +5,7 @@ const db = require('../db/db')
 const router = express.Router()
 
 // get route for calling getBirds (returns array of birds)
-router.get('/specific', (req, res) => {
+router.get('/', (req, res) => {
   return db.getBirds()
     .then(birds => {
       res.json(birds)

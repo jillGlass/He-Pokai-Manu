@@ -123,9 +123,65 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
                 className="item"
                 onClick={[Function]}
               >
-                You have found 6 birds! Can you find them all?
+                You have found 6 birds!
+                <br />
+                Can you find them all?
               </div>
             </MenuItem>
+            <InstructionsBtn>
+              <Button
+                as="button"
+                className="iconInstructions"
+                icon={true}
+                size="big"
+              >
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui big icon button iconInstructions"
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="question circle outline icon"
+                        />
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big icon button iconInstructions"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="question circle outline icon"
+                          />
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui big icon button iconInstructions"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        as="i"
+                        name="question circle outline"
+                      >
+                        <i
+                          aria-hidden="true"
+                          className="question circle outline icon"
+                          onClick={[Function]}
+                        />
+                      </Icon>
+                    </button>
+                  </RefFindNode>
+                </Ref>
+              </Button>
+            </InstructionsBtn>
           </div>
         </Container>
       </div>
