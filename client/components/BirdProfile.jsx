@@ -19,9 +19,9 @@ class BirdProfile extends React.Component {
                 <div className='birdProfileImage'><img src='images/tui.png'/></div>
                 <BirdProfileTitle />
                 <FoundBtn />
-                {/* <Link to={`/${this.props}/info`}> */}
-                <BirdInfoBtn />
-                {/* </Link> */}
+                <Link to={`/profile/${this.props}/info`}>
+                  <BirdInfoBtn />
+                </Link>
                 <Link to="/">
                   <BackBtn />
                 </Link>

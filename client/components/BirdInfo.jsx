@@ -14,9 +14,9 @@ const BirdInfo = (props) => {
       description={`${info}`}
     />
     <Router>
-      {/* <Link to={`/${props.match.params.id}`}> */}
+      <Link to={`/profile/${props.match.params.id}`}>
         <BackBtn/>
-      {/* </Link> */}
+      </Link>
     </Router>
     </>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import BirdProfile from '../../../../client/components/BirdProfile'
-import BirdHeader from '../../../../client/components/BirdHeader'
-import BirdProfileTitle from '../../../../client/components/BirdProfileTitle'
-import BackBtn from '../../../../client/components/BackBtn'
-import FoundBtn from '../../../../client/components/FoundBtn'
-import BirdInfoBtn from '../../../../client/components/BirdInfoBtn'
+import BirdProfile from '../../../client/components/BirdProfile'
+import BirdHeader from '../../../client/components/BirdHeader'
+import BirdProfileTitle from '../../../client/components/BirdProfileTitle'
+import BackBtn from '../../../client/components/BackBtn'
+import FoundBtn from '../../../client/components/FoundBtn'
+import BirdInfoBtn from '../../../client/components/BirdInfoBtn'
 
 const mockBirdProfileProps = {
   image: 'public/images/piwakawaka.jpg/'
