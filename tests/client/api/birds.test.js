@@ -17,10 +17,10 @@ describe('BirdGrid and BirdCircle Component Tests:', () => {
   it('The BirdGrid component passes the appropriate info to the BirdCircle component', () => {
     // Act
     const wrapper = mount(<BirdGrid />)
-    const actual = 1
-    const expected = 1
+    const actual = wrapper.find({ name: 'California Quail' })// this is currently returning a React Element, seems meaningless.
+    console.log(actual)
     // Assert
-    expect(actual).toBe(expected)
+    expect(actual).toBeTruthy()
   })
 
   xit('The BirdCircle Component renders the image, name and details props', () => {

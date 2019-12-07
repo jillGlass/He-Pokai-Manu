@@ -19,7 +19,7 @@ class BirdGrid extends React.Component {
   }
   
   render () {
-    console.log(this.state)
+    console.log(this.state.birds[0])
     return (
       <React.Fragment>
 
