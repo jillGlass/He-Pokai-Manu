@@ -109,7 +109,7 @@ body {
 
 .circleTitle {
   grid-area: circleTitle;
-  font-size: 32px;
+  font-size: 1.5rem;
   color: white;
   padding-top: 1rem;
   padding-bottom: .7rem;
