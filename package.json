@@ -31,8 +31,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "grommet": "^2.8.1",
-    "grommet-icons": "^4.4.0",
     "knex": "^0.20.3",
     "nodemon": "^2.0.1",
     "react-router-dom": "^5.1.2",
