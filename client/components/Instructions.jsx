@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BirdHeader from './BirdHeader'
 import MainFooter from './MainFooter'
 import BackBtn from './BackBtn'
@@ -11,8 +12,11 @@ const Instructions = () => (
         <p className="instructions">To play, get outside and get bird spotting! Each time you spot a bird that is listed, go into the bird profile and push 'POKAI'. Your found bird will then be added to your inventory of birds.</p>
         <br></br>
         <p className="instructions">How many can you find?</p>
-      <BackBtn/>
-      <MainFooter />
+
+        <Link to="/">
+          <BackBtn/>
+        </Link>
+        <MainFooter />
     </>
 )
 
