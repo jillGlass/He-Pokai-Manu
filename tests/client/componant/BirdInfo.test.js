@@ -32,7 +32,7 @@ describe('BirdInfo component test', () => {
     const wrapper = mount(<BirdInfo match={params}/>)
     const actual = wrapper.setProps({ name: name, info: info })
     const actualInfo = wrapper.text()
-    
+
     // Assert
     expect(actual).hasOwnProperty(expected.name)
     expect(actual).hasOwnProperty(expected.info)

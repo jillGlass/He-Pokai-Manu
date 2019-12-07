@@ -23,13 +23,6 @@ describe('Server side routes call db functions correctly', () => {
         expect(res.body).toEqual(mockBirds)
       })
   })
-  it('GET /:id', () => {
-    return request(server)
-      .get('/api/v1/10')
-      .then((res) => {
-        expect(res.body).toEqual(mockBird)
-      })
-  })
   it('PUT /:id', () => {
     return request(server)
       .put('/api/v1/3')
