@@ -1,11 +1,12 @@
+import React from 'react'
 import { Enzyme, mount } from 'enzyme'
 
 import Adapter from 'enzyme-adapter-react-16'
-import request from 'superagent'
+// import request from 'superagent'
 import BirdGrid from './BirdGrid'
-import { exportAllDeclaration } from '@babel/types'
-import { JestEnvironment } from '@jest/environment'
-import { promises } from 'dns'
+// import { exportAllDeclaration } from '@babel/types'
+// import { JestEnvironment } from '@jest/environment'
+// import { promises } from 'dns'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -21,9 +22,10 @@ describe('BirdGrid and BirdCircle Component Tests:', () => {
   it('The BirdGrid component passes the appropriate info to the BirdCircle component', () => {
     // Act
     const wrapper = mount(<BirdGrid />)
-    const actual = wrapper.
+    const actual = wrapper
+    const expected = wrapper
     // Assert
-    expect()
+    expect(actual).toBe(expected)
   })
 
   xit('The BirdCircle Component renders the image, name and details props')
