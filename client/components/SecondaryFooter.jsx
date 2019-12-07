@@ -1,6 +1,5 @@
 import React from 'react'
 import { Menu, Container } from 'semantic-ui-react'
-import InstructionsBtn from './InstructionsBtn'
 
 class MainFooter extends React.Component {
   state = {
@@ -17,7 +16,6 @@ class MainFooter extends React.Component {
             <br></br>
             Can you find them all?
           </Menu.Item>
-          <InstructionsBtn />
         </Container>
       </Menu>
     )
