@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BirdHeader /> component test render unchanged from previous snapshot 1`] = `
+<BirdHeader>
+  <Menu
+    borderless={true}
+    className="centerHeader"
+    fixed="top"
+    inverted={true}
+    style={
+      Object {
+        "backgroundColor": "#F3A712",
+      }
+    }
+  >
+    <div
+      className="ui borderless inverted top fixed centerHeader menu"
+      style={
+        Object {
+          "backgroundColor": "#F3A712",
+        }
+      }
+    >
+      <Container>
+        <div
+          className="ui container"
+        >
+          <MenuItem>
+            <div
+              className="item"
+              onClick={[Function]}
+            >
+              He Pokai Manu
+            </div>
+          </MenuItem>
+        </div>
+      </Container>
+    </div>
+  </Menu>
+</BirdHeader>
+`;
