@@ -17,6 +17,26 @@ body {
 .iconInstructions {
   background-color: white !important;
 }
+/* 
+.birdProfileImage {
+  height: auto;
+  width: 515px;
+} */
+
+.birdProfileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.birdProfileTitle {
+  font-size: 42px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
 
 .birdInfoBtnStyle {
   border-radius: 18px;
@@ -34,6 +54,7 @@ body {
   flex-direction:row;
   justify-content:center;
   color: white !important;
+
 }
 
 .backBtnStyle {
@@ -43,6 +64,7 @@ body {
   flex-direction:row;
   justify-content:center;
   color: white !important;
+  
 }
 
 .footer {
