@@ -10,9 +10,12 @@ import found from '../api/found'
 
 class BirdProfile extends React.Component {
   handleClick = (id) => {
-    console.log('handleclick')
     found(id)
   }
+
+  toggleLink = (bird) => (
+    bird.found ? `/profile/${bird.bird_id}` : '/'
+  )
 
   render () {
     const { id } = this.props.match.params
@@ -28,7 +31,7 @@ class BirdProfile extends React.Component {
                 <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
               </div>
               <BirdProfileTitle name={bird.name}/>
-              <Link to="/">
+              <Link to={this.toggleLink(bird)}>
                 <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className='foundBtnStyle' >POKAI!</Button>
               </Link>
               <Link to={`/profile/${id}/info`}>
