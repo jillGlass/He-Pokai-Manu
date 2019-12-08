@@ -1,13 +1,12 @@
 import React from 'react'
 
-// import {getBird} from '
-
 class BirdProfileTitle extends React.Component {
   render () {
+    const { name } = this.props
     return (
       <React.Fragment>
 
-        <div className='birdProfileTitle'>{this.props.birds.name}</div>
+        <div className='birdProfileTitle'>{name}</div>
 
       </React.Fragment>
     )

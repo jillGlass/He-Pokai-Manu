@@ -2,6 +2,7 @@ import React from 'react'
 import { Menu, Container } from 'semantic-ui-react'
 import InstructionsBtn from './InstructionsBtn'
 import { Link, HashRouter as Router } from 'react-router-dom'
+import ConsoleLog from './ConsoleLog'
 
 class MainFooter extends React.Component {
   state = {
@@ -12,12 +13,13 @@ class MainFooter extends React.Component {
   }
 
   render () {
-    this.props.birds.map(bird => {
-      if (bird.found === true) {
-        this.updateCount()
-      }
-    }
-    )
+    // this.props.birds.map(bird => {
+    //   if (bird.found === true) {
+    //     console.log('map function', this.state.count)
+    //     this.updateCount()
+    //   }
+    // }
+    // )
     const count = this.state.count
     const message = `You have found ${count} birds!`
     return (
@@ -30,6 +32,7 @@ class MainFooter extends React.Component {
           <Router>
             <Link to='/instructions'>
               <InstructionsBtn />
+              <ConsoleLog>{this.props}</ConsoleLog>
             </Link>
           </Router>
         </Container>
