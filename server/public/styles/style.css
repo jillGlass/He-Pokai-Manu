@@ -21,11 +21,11 @@ body {
 .iconInstructions {
   background-color: #F3A712  !important;
 }
-/* 
+
 .birdProfileImage {
-  height: auto;
-  width: 515px;
-} */
+  height: auto !important;
+  width: 515px !important;
+}
 
 .birdProfileContainer {
   display: flex;
