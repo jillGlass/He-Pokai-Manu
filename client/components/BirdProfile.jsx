@@ -18,7 +18,9 @@ class BirdProfile extends React.Component {
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
               <BirdHeader />
-              <div className='birdProfileImage'>{bird.image}</div>
+              <div>
+                <img src={bird.image} alt={bird.name} width="355px" height="auto"/>
+              </div>
               <BirdProfileTitle name={bird.name}/>
               <FoundBtn />
               <Link to={`/profile/${id}/info`}>

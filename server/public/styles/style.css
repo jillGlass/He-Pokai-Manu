@@ -14,6 +14,12 @@ body {
   margin-top: 0!important;
 }
 
+.gridWrapUpper {
+  margin-bottom: 110px;
+  margin-top: 30px;
+ 
+}
+
 .ui.grid {
   margin-top: 0;
 }
@@ -21,11 +27,11 @@ body {
 .iconInstructions {
   background-color: #F3A712  !important;
 }
-/* 
+
 .birdProfileImage {
-  height: auto;
-  width: 515px;
-} */
+  height: auto !important;
+  width: 515px !important;
+}
 
 .birdProfileContainer {
   display: flex;
@@ -124,5 +130,6 @@ body {
   font-size: 20px;
   margin: 20px;
   padding-top: 40px;
+  
 }
 
