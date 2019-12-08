@@ -1,14 +1,19 @@
 import React from 'react'
 import BirdHeader from './BirdHeader'
-import FoundBtn from './FoundBtn'
+// import FoundBtn from './FoundBtn'
 import BirdInfoBtn from './BirdInfoBtn'
 import BackBtn from './BackBtn'
 import BirdProfileTitle from './BirdProfileTitle'
 import { Link } from 'react-router-dom'
-import { Segment, Grid } from 'semantic-ui-react'
+import { Segment, Grid, Button } from 'semantic-ui-react'
 import found from '../api/found'
 
 class BirdProfile extends React.Component {
+  handleClick = (id) => {
+    console.log('handleclick')
+    found(id)
+  }
+
   render () {
     const { id } = this.props.match.params
     const bird = this.props.birds.find(bird => bird.bird_id === Number(id))
@@ -24,7 +29,7 @@ class BirdProfile extends React.Component {
               </div>
               <BirdProfileTitle name={bird.name}/>
               <Link to="/">
-                <FoundBtn onClick={found(id)}/>
+                <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className='foundBtnStyle' >POKAI!</Button>
               </Link>
               <Link to={`/profile/${id}/info`}>
                 <BirdInfoBtn />
