@@ -9,6 +9,8 @@ import { Segment, Grid } from 'semantic-ui-react'
 
 class BirdProfile extends React.Component {
   render () {
+    const { id } = this.props.match.params
+    const bird = this.props.birds.find(bird => bird.bird_id === Number(id))
     return (
       <React.Fragment>
 
@@ -16,10 +18,10 @@ class BirdProfile extends React.Component {
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
               <BirdHeader />
-              <div className='birdProfileImage'>{this.props.birds.image}</div>
-              <BirdProfileTitle birds={this.props.birds} id={this.props.match.params.id}/>
+              <div className='birdProfileImage'>{bird.image}</div>
+              <BirdProfileTitle name={bird.name}/>
               <FoundBtn />
-              <Link to={`/profile/${this.props.match.params.id}/info`}>
+              <Link to={`/profile/${id}/info`}>
                 <BirdInfoBtn />
               </Link>
               <Link to="/">
