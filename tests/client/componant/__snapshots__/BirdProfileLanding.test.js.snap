@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BirdProfile component test render unchanged from previous snapshot 1`] = `
+<BirdProfile>
+  <Segment
+    style={
+      Object {
+        "padding": "5px 5px",
+      }
+    }
+    vertical={true}
+  >
+    <div
+      className="ui vertical segment"
+      style={
+        Object {
+          "padding": "5px 5px",
+        }
+      }
+    >
+      <Grid
+        container={true}
+        stackable={true}
+        verticalAlign="center"
+      >
+        <div
+          className="ui container stackable center aligned grid"
+        >
+          <GridRow>
+            <div
+              className="row"
+            >
+              <BirdHeader>
+                <Menu
+                  borderless={true}
+                  className="centerHeader"
+                  fixed="top"
+                  inverted={true}
+                  style={
+                    Object {
+                      "backgroundColor": "#F3A712",
+                    }
+                  }
+                >
+                  <div
+                    className="ui borderless inverted top fixed centerHeader menu"
+                    style={
+                      Object {
+                        "backgroundColor": "#F3A712",
+                      }
+                    }
+                  >
+                    <Container>
+                      <div
+                        className="ui container"
+                      >
+                        <MenuItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                          >
+                            He Pokai Manu
+                          </div>
+                        </MenuItem>
+                      </div>
+                    </Container>
+                  </div>
+                </Menu>
+              </BirdHeader>
+              <div
+                className="birdProfileImage"
+              >
+                <img
+                  src="images/tui.png"
+                />
+              </div>
+              <BirdProfileTitle>
+                <div
+                  className="birdProfileTitle"
+                >
+                  Tui
+                </div>
+              </BirdProfileTitle>
+              <FoundBtn>
+                <Button
+                  as="button"
+                  className="foundBtnStyle"
+                  size="massive"
+                  style={
+                    Object {
+                      "marginBottom": "10px",
+                    }
+                  }
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui massive button foundBtnStyle"
+                          style="margin-bottom: 10px;"
+                        >
+                          POKAI!
+                        </button>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui massive button foundBtnStyle"
+                            style="margin-bottom: 10px;"
+                          >
+                            POKAI!
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui massive button foundBtnStyle"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "marginBottom": "10px",
+                          }
+                        }
+                      >
+                        POKAI!
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </FoundBtn>
+              <BirdInfoBtn>
+                <Button
+                  as="button"
+                  className="birdInfoBtnStyle"
+                  size="huge"
+                  style={
+                    Object {
+                      "marginBottom": "10px",
+                    }
+                  }
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui huge button birdInfoBtnStyle"
+                          style="margin-bottom: 10px;"
+                        >
+                          Bird Info
+                        </button>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui huge button birdInfoBtnStyle"
+                            style="margin-bottom: 10px;"
+                          >
+                            Bird Info
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui huge button birdInfoBtnStyle"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "marginBottom": "10px",
+                          }
+                        }
+                      >
+                        Bird Info
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </BirdInfoBtn>
+              <BackBtn>
+                <Button
+                  as="button"
+                  className="backBtnStyle"
+                  size="big"
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big button backBtnStyle"
+                        >
+                          Back
+                        </button>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui big button backBtnStyle"
+                          >
+                            Back
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui big button backBtnStyle"
+                        onClick={[Function]}
+                      >
+                        Back
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </BackBtn>
+            </div>
+          </GridRow>
+        </div>
+      </Grid>
+    </div>
+  </Segment>
+</BirdProfile>
+`;
