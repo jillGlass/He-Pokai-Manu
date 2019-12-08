@@ -21,12 +21,15 @@ class App extends React.Component {
   }
 
   render () {
-    return this.state.birds.length === 0 ? null : (
+    return this.state.birds.length === 0 ? '' : (
       <>
         <Router>
           <Switch>
             <Route exact path='/profile/:id/info' component={BirdInfo}/>
-            <Route exact path='/profile/:id' component={BirdProfile}/>
+            <Route exact path='/profile/:id' render={() => {
+              console.log(this.props.match)
+              return <BirdProfile birds={this.state.birds} match={this.props.match}/>
+            }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={(props) => (
               <Perching birds={this.state.birds} />
