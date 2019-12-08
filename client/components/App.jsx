@@ -26,8 +26,8 @@ class App extends React.Component {
         <Router>
           <Switch>
             <Route exact path='/profile/:id/info' component={BirdInfo}/>
-            <Route exact path='/profile/:id' render={() => {
-              return <BirdProfile birds={this.state.birds} match={this.props.match}/>
+            <Route exact path='/profile/:id' render={(props) => {
+              return <BirdProfile birds={this.state.birds} {...props}/>
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={(props) => (
