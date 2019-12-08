@@ -9,7 +9,7 @@ class Perching extends React.Component {
     return (
       <>
       <BirdHeader />
-      <BirdGrid birds={this.props}/>
+      <BirdGrid birds={this.props.birds}/>
       <MainFooter />
       </>
     )

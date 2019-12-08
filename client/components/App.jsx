@@ -21,7 +21,6 @@ class App extends React.Component {
   }
 
   render () {
-    console.log('app', this.state.birds)
     return this.state.birds.length === 0 ? null : (
       <>
         <Router>
@@ -30,10 +29,7 @@ class App extends React.Component {
             <Route exact path='/profile/:id' component={BirdProfile}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={(props) => (
-              <Perching
-                birds={this.state.birds}
-                state={this.state}
-              />
+              <Perching birds={this.state.birds} />
             )}/>
           </Switch>
         </Router>
