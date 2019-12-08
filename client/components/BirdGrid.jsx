@@ -8,8 +8,17 @@ class BirdGrid extends React.Component {
       <React.Fragment>
         <div className='gridWrapUpper'>
           <Grid className='gridWrap' columns={2} doubling>
-            {this.props.birds.map(bird => <BirdCircle 
-            id={bird.bird_id} key={bird.name} name={bird.name} image={bird.image} found={bird.found} />)}
+            {this.props.birds.map(bird => 
+              <BirdCircle key={bird.name} {...bird} />
+              // <BirdCircle 
+              //   key={bird.name}
+              //   id={bird.bird_id}
+              //   name={bird.name}
+              //   image={bird.image}
+              //   found={bird.found}
+              // />)
+            )
+            }
           </Grid>
         </div>
       </React.Fragment>
