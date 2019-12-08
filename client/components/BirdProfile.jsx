@@ -15,12 +15,12 @@ class BirdProfile extends React.Component {
     return (
       <React.Fragment>
 
-        <Segment style={{ padding: '5px 5px' }} vertical>
-          <Grid container stackable verticalAlign='middle'>
+        <Segment vertical >
+          <Grid container stackable className='birdProfileWrapper' >
             <Grid.Row>
               <BirdHeader />
               <div>
-                <img src={bird.image} alt={bird.name} width="355px" height="auto"/>
+                <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
               </div>
               <BirdProfileTitle name={bird.name}/>
               <Link to="/">
@@ -43,3 +43,6 @@ class BirdProfile extends React.Component {
 }
 
 export default BirdProfile
+
+// style={{ padding: '5px 5px' }}
+// verticalAlign='middle'
