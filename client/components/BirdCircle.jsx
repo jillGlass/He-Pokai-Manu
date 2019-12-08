@@ -24,7 +24,3 @@ class BirdCircle extends React.Component {
 export default BirdCircle
 
 
-//
-
-// If found state = true show class circleImageFound otherwise circleImage
-

@@ -9,25 +9,17 @@ import fetch from '../api/birds'
 
 class App extends React.Component {
   state = {
-    birds: [],
-    found: 0
+    birds: []
   }
 
   componentDidMount () {
     fetch()
       .then(birds => {
         this.setState({
-          birds,
-          found: this.counter(birds)
+          birds
         })
       })
   }
-
-  counter = (birds) => birds.reduce((found, bird) => {
-    if (bird.found) {
-      found++
-    } return found
-  }, 0)
 
   render () {
     return this.state.birds.length === 0 ? '' : (
@@ -42,7 +34,7 @@ class App extends React.Component {
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={(props) => (
-              <Perching birds={this.state.birds} found={this.state.found}/>
+              <Perching birds={this.state.birds}/>
             )}/>
           </Switch>
         </Router>
