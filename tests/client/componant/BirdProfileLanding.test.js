@@ -16,7 +16,7 @@ describe('BirdProfile component test', () => {
   it('BirdProfile contains header, image, found, bird info and back button components', () => {
     // Arrange
     const image = mockBirdProfileProps
-    const expected = [<BirdHeader/>, image, <BirdProfileTitle />,
+    const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />,
       <FoundBtn />,
       <BirdInfoBtn />,
       <BackBtn />]
