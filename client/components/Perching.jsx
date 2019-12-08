@@ -6,14 +6,16 @@ import fetch from '../api/birds'
 
 class Perching extends React.Component {
   state = {
-    found: 0
+    found: 0,
+    birds: []
   }
 
   componentDidMount () {
     fetch()
       .then(birds => {
         this.setState({
-          found: this.counter(birds)
+          found: this.counter(birds),
+          birds
         })
       })
   }
@@ -28,8 +30,12 @@ class Perching extends React.Component {
     return (
       <>
       <BirdHeader />
-      <BirdGrid birds={this.props.birds}/>
-      <MainFooter birds={this.props.birds} found={this.state.found}/>
+      <BirdGrid birds={this.state.birds}/>
+      <MainFooter birds={this.state.birds} found={this.state.found}/>
+
+   
+
+
       </>
     )
   }

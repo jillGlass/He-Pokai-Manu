@@ -6,7 +6,7 @@ class BirdProfileTitle extends React.Component {
     return (
       <React.Fragment>
 
-        <div className='birdProfileTitle'>{name}</div>
+        <div className='birdProfileTitle'>{name}<br></br></div>
 
       </React.Fragment>
     )
