@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class BirdCircle extends React.Component {
+  id = this.props.id
   name = this.props.name
   image = this.props.image
   render () {
@@ -8,7 +10,9 @@ class BirdCircle extends React.Component {
       <React.Fragment>
         <div className='wrapperBirds'>
           <div className='birdContainer'>
-            <div className="circleImage"><img className="circleImage" src={ this.image }></img></div>
+            <Link to={`/profile/${this.id}`}>
+              <div className="circleImage"><img className="circleImage" src={ this.image }></img></div>
+            </Link>
             <div className='circleTitle'>{ this.name }</div>
           </div>
         </div>
