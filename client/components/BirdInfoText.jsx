@@ -1,4 +1,5 @@
 import React from 'react'
+import ConsoleLog from './ConsoleLog'
 
 class BirdInfoText extends React.Component {
   render () {
@@ -7,10 +8,10 @@ class BirdInfoText extends React.Component {
 
     return (
       <React.Fragment>
-
-        <div className='birdInfoTextName'>{bird.name}</div>
-        <div className='birdInfoTextInfo'>{bird.info}</div>
-
+        <div className='birdInfoTextWrapper'>
+          <div className='birdInfoTextName'>{bird.name}</div>
+          <div className='birdInfoTextInfo'>{bird.info}</div>
+        </div>
       </React.Fragment>
     )
   }
