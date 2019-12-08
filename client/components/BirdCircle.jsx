@@ -11,7 +11,7 @@ class BirdCircle extends React.Component {
         <div className='wrapperBirds'>
           <div className='birdContainer'>
             <Link to={`/profile/${this.id}`}>
-              <div className="circleImage"><img className="circleImage" src={ this.image }></img></div>
+              <div className="circleImage"><img className={ this.props.found ? "circleImageFound" : "circleImage"} src={ this.image }></img></div>
             </Link>
             <div className='circleTitle'>{ this.name }</div>
           </div>
@@ -22,3 +22,9 @@ class BirdCircle extends React.Component {
 }
 
 export default BirdCircle
+
+
+//
+
+// If found state = true show class circleImageFound otherwise circleImage
+
