@@ -13,10 +13,11 @@ const mockBirdInfoProps = {
 describe('BirdInfo component test', () => {
   it('BirdInfo contains header, info card, and button components', () => {
     // Arrange
+    const params = { params: { id: 1 } }
     const { name, info } = mockBirdInfoProps
     const expected = [<BirdHeader/>, <Card/>, <BackBtn/>]
     // Act
-    const wrapper = mount(<BirdInfo/>)
+    const wrapper = mount(<BirdInfo match={params}/>)
     wrapper.setProps({ name: name, info: info })
     const actual = wrapper.containsAllMatchingElements(expected)
     // Assert
@@ -24,13 +25,14 @@ describe('BirdInfo component test', () => {
   })
   it('BirdInfo Card element has expected props', () => {
     // Arrange
+    const params = { params: { id: 1 } }
     const { name, info } = mockBirdInfoProps
     const expected = { info: 'info', name: 'name' }
     // Act
-    const wrapper = mount(<BirdInfo/>)
+    const wrapper = mount(<BirdInfo match={params}/>)
     const actual = wrapper.setProps({ name: name, info: info })
     const actualInfo = wrapper.text()
-    
+
     // Assert
     expect(actual).hasOwnProperty(expected.name)
     expect(actual).hasOwnProperty(expected.info)

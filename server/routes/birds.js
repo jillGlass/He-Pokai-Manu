@@ -15,19 +15,6 @@ router.get('/', (req, res) => {
     })
 })
 
-// get route for calling getBird (returns object of individual bird)
-router.get('/:id', (req, res) => {
-  const id = Number(req.params.id)
-  return db.getBird(id)
-    .then(bird => {
-      res.json(bird)
-    })
-    .catch(err => {
-      res.status(500).send('DATABASE ERROR: ' + err.message)
-    }
-    )
-})
-
 // Put route for changing bird found status to true in db
 router.put('/:id', (req, res) => {
   const id = Number(req.params.id)
