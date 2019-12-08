@@ -1,5 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import BirdProfile from '../../../client/components/BirdProfile'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BirdProfileTitle from '../../../client/components/BirdProfileTitle'
@@ -26,18 +27,9 @@ describe('BirdProfile component test', () => {
     // Assert
     expect(actual).toBeTruthy()
   })
-  it('BirdProfile component has expected props', () => {
-    // Arrange
-    const image = mockBirdProfileProps
-    const expected = { image: 'image' }
-
-    // Act
+  it('render unchanged from previous snapshot', () => {
     const wrapper = mount(<BirdProfile/>)
-    const actual = wrapper.setProps({ image: image })
-    const actualInfo = wrapper.text()
 
-    // Assert
-    expect(actual).hasOwnProperty(expected.image)
-    expect(actualInfo).toContain('Tui')
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })
