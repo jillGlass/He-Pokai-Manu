@@ -5,20 +5,29 @@ import Instructions from './Instructions'
 import BirdProfile from './BirdProfile'
 import BirdInfo from './BirdInfo'
 import fetch from '../api/birds'
+// import ConsoleLog from './ConsoleLog'
 
 class App extends React.Component {
   state = {
-    birds: []
+    birds: [],
+    found: 0
   }
 
   componentDidMount () {
     fetch()
       .then(birds => {
         this.setState({
-          birds
+          birds,
+          found: this.counter(birds)
         })
       })
   }
+
+  counter = (birds) => birds.reduce((found, bird) => {
+    if (bird.found) {
+      found++
+    } return found
+  }, 0)
 
   render () {
     return this.state.birds.length === 0 ? '' : (
@@ -33,7 +42,7 @@ class App extends React.Component {
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={(props) => (
-              <Perching birds={this.state.birds} />
+              <Perching birds={this.state.birds} found={this.state.found}/>
             )}/>
           </Switch>
         </Router>

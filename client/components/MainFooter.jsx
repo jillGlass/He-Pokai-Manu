@@ -5,29 +5,9 @@ import { Link, HashRouter as Router } from 'react-router-dom'
 import ConsoleLog from './ConsoleLog'
 
 class MainFooter extends React.Component {
-  state = {
-    count: 0
-  }
-  updateCount = () => {
-    const currentCount = this.state.count // 0, 1, 2
-
-    this.setState({
-      count: currentCount + 1
-    })
-  }
-
-  countFound = () => this.props.birds.map(bird => {
-    if (bird.found === 1) {
-      this.updateCount()
-    }
-  }
-  )
-  componentDidMount () {
-    this.countFound()
-  }
-
+  
   render () {
-    const number = this.state.count
+    const number = this.props.found
     const message = `You have found ${number} birds!`
     return (
       <Menu fixed='bottom' inverted style = {{ backgroundColor: '#F3A712' }}>
@@ -40,7 +20,8 @@ class MainFooter extends React.Component {
           <Router>
             <Link to='/instructions'>
               <InstructionsBtn />
-              <ConsoleLog>{this.props.birds}</ConsoleLog>
+              <ConsoleLog>Props:{this.props.birds}</ConsoleLog>
+              <ConsoleLog>Found:{this.props.found}</ConsoleLog>
             </Link>
           </Router>
         </Container>
