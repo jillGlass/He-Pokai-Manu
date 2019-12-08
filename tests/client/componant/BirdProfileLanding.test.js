@@ -16,7 +16,7 @@ describe('BirdProfile component test', () => {
   it('BirdProfile contains header, image, found, bird info and back button components', () => {
     // Arrange
     const image = mockBirdProfileProps
-    const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />,
+    const expected = [<BirdHeader/>, image, <BirdProfileTitle />,
       <FoundBtn />,
       <BirdInfoBtn />,
       <BackBtn />]
@@ -27,16 +27,9 @@ describe('BirdProfile component test', () => {
     // Assert
     expect(actual).toBeTruthy()
   })
-  it('BirdProfile component has expected props', () => {
-    // Arrange
-    const image = mockBirdProfileProps
-    const expected = { image: 'image' }
-
-    // Act
+  it('render unchanged from previous snapshot', () => {
     const wrapper = mount(<BirdProfile/>)
 
-    // Assert
-    expect(actual).hasOwnProperty(expected.image)
-    expect(actualInfo).toContain('Tui')
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })
