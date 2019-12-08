@@ -8,31 +8,39 @@ class MainFooter extends React.Component {
   state = {
     count: 0
   }
-  updateCount () {
-    this.setState({ count: this.state.count + 1 })
+  updateCount = () => {
+    const currentCount = this.state.count
+
+    this.setState({
+      count: currentCount + 1
+    })
+  }
+
+  countFound = () => this.props.birds.map(bird => {
+    if (bird.found === 1) {
+      this.updateCount()
+    }
+  }
+  )
+  componentDidMount() {
+    this.countFound()
   }
 
   render () {
-    // this.props.birds.map(bird => {
-    //   if (bird.found === true) {
-    //     console.log('map function', this.state.count)
-    //     this.updateCount()
-    //   }
-    // }
-    // )
-    const count = this.state.count
-    const message = `You have found ${count} birds!`
+    const number = this.state.count
+    const message = `You have found ${number} birds!`
     return (
       <Menu fixed='bottom' inverted style = {{ backgroundColor: '#F3A712' }}>
         <Container className="footer" >
-          <Menu.Item >{message}
+          <Menu.Item >
+            {message}
             <br></br>
             Can you find them all?
           </Menu.Item>
           <Router>
             <Link to='/instructions'>
               <InstructionsBtn />
-              <ConsoleLog>{this.props}</ConsoleLog>
+              {/* <ConsoleLog>{this.props.birds.found}</ConsoleLog> */}
             </Link>
           </Router>
         </Container>
