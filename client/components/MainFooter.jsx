@@ -9,7 +9,7 @@ class MainFooter extends React.Component {
     count: 0
   }
   updateCount = () => {
-    const currentCount = this.state.count
+    const currentCount = this.state.count // 0, 1, 2
 
     this.setState({
       count: currentCount + 1
@@ -22,7 +22,7 @@ class MainFooter extends React.Component {
     }
   }
   )
-  componentDidMount() {
+  componentDidMount () {
     this.countFound()
   }
 
@@ -40,7 +40,7 @@ class MainFooter extends React.Component {
           <Router>
             <Link to='/instructions'>
               <InstructionsBtn />
-              {/* <ConsoleLog>{this.props.birds.found}</ConsoleLog> */}
+              <ConsoleLog>{this.props.birds}</ConsoleLog>
             </Link>
           </Router>
         </Container>
