@@ -6,6 +6,7 @@ import BackBtn from './BackBtn'
 import BirdProfileTitle from './BirdProfileTitle'
 import { Link } from 'react-router-dom'
 import { Segment, Grid } from 'semantic-ui-react'
+import found from '../api/found'
 
 class BirdProfile extends React.Component {
   render () {
@@ -20,7 +21,9 @@ class BirdProfile extends React.Component {
               <BirdHeader />
               <div className='birdProfileImage'>{bird.image}</div>
               <BirdProfileTitle name={bird.name}/>
-              <FoundBtn />
+              <Link to="/">
+                <FoundBtn onClick={found(id)}/>
+              </Link>
               <Link to={`/profile/${id}/info`}>
                 <BirdInfoBtn />
               </Link>
