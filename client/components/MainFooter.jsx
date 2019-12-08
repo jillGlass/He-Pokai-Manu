@@ -5,16 +5,17 @@ import { Link, HashRouter as Router } from 'react-router-dom'
 
 class MainFooter extends React.Component {
   state = {
+    count: 2
   }
 
   render () {
+    const count = this.state.count
+    const message = `You have found ${count} birds!`
     return (
 
       <Menu fixed='bottom' inverted style = {{ backgroundColor: '#F3A712' }}>
         <Container className="footer" >
-          <Menu.Item >
-
-            You have found 6 birds!
+          <Menu.Item >{message}
             <br></br>
             Can you find them all?
           </Menu.Item>
