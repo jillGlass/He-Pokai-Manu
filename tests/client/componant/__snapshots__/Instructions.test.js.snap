@@ -39,75 +39,67 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
       </div>
     </Menu>
   </BirdHeader>
-  <p
-    className="instructions"
+  <div
+    className="instructionsWrap"
   >
-     He Pokai-Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. 
-  </p>
-  <br />
-  <p
-    className="instructions"
-  >
-    To play, get outside and get bird spotting! Each time you spot a bird that is listed, go into the bird profile and push 'POKAI'. Your found bird will then be added to your inventory of birds.
-  </p>
-  <br />
-  <p
-    className="instructions"
-  >
-    How many can you find?
-  </p>
-  <HashRouter>
-    <Router
-      history={
-        Object {
-          "action": "POP",
-          "block": [Function],
-          "createHref": [Function],
-          "go": [Function],
-          "goBack": [Function],
-          "goForward": [Function],
-          "length": 1,
-          "listen": [Function],
-          "location": Object {
-            "hash": "",
-            "pathname": "/",
-            "search": "",
-            "state": undefined,
-          },
-          "push": [Function],
-          "replace": [Function],
-        }
-      }
+    <p
+      className="instructions"
     >
-      <Link
-        to="/"
+       He Pokai-Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. 
+    </p>
+    <br />
+    <p
+      className="instructions"
+    >
+      To play, get outside and get bird spotting! Each time you spot a bird that is listed, go into the bird profile and push 'POKAI'. Your found bird will then be added to your inventory of birds.
+    </p>
+    <br />
+    <p
+      className="instructions"
+    >
+      How many can you find?
+    </p>
+    <HashRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
       >
-        <LinkAnchor
-          href="#/"
-          navigate={[Function]}
+        <Link
+          to="/"
         >
-          <a
+          <LinkAnchor
             href="#/"
-            onClick={[Function]}
+            navigate={[Function]}
           >
-            <BackBtn>
-              <Button
-                as="button"
-                className="backBtnStyle"
-                size="big"
-              >
-                <Ref
-                  innerRef={
-                    Object {
-                      "current": <button
-                        class="ui big button backBtnStyle"
-                      >
-                        Back
-                      </button>,
-                    }
-                  }
+            <a
+              href="#/"
+              onClick={[Function]}
+            >
+              <BackBtn>
+                <Button
+                  as="button"
+                  className="backBtnStyle"
+                  size="big"
                 >
-                  <RefFindNode
+                  <Ref
                     innerRef={
                       Object {
                         "current": <button
@@ -118,59 +110,32 @@ exports[`<Instructions /> component test render unchanged from previous snapshot
                       }
                     }
                   >
-                    <button
-                      className="ui big button backBtnStyle"
-                      onClick={[Function]}
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui big button backBtnStyle"
+                          >
+                            Back
+                          </button>,
+                        }
+                      }
                     >
-                      Back
-                    </button>
-                  </RefFindNode>
-                </Ref>
-              </Button>
-            </BackBtn>
-          </a>
-        </LinkAnchor>
-      </Link>
-    </Router>
-  </HashRouter>
-  <MainFooter>
-    <Menu
-      fixed="bottom"
-      inverted={true}
-      style={
-        Object {
-          "backgroundColor": "#F3A712",
-        }
-      }
-    >
-      <div
-        className="ui inverted bottom fixed menu"
-        style={
-          Object {
-            "backgroundColor": "#F3A712",
-          }
-        }
-      >
-        <Container
-          className="footer"
-        >
-          <div
-            className="ui container footer"
-          >
-            <MenuItem>
-              <div
-                className="item"
-                onClick={[Function]}
-              >
-                You have found 6 birds!
-                <br />
-                Can you find them all?
-              </div>
-            </MenuItem>
-          </div>
-        </Container>
-      </div>
-    </Menu>
-  </MainFooter>
+                      <button
+                        className="ui big button backBtnStyle"
+                        onClick={[Function]}
+                      >
+                        Back
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </BackBtn>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </Router>
+    </HashRouter>
+  </div>
 </Instructions>
 `;
