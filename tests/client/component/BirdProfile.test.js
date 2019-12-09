@@ -5,31 +5,33 @@ import BirdProfile from '../../../client/components/BirdProfile'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BirdProfileTitle from '../../../client/components/BirdProfileTitle'
 import BackBtn from '../../../client/components/BackBtn'
-import FoundBtn from '../../../client/components/FoundBtn'
 import BirdInfoBtn from '../../../client/components/BirdInfoBtn'
+import Button from '../../../client/components/BirdProfile'
 
 const mockBirdProfileProps = {
-  image: 'public/images/piwakawaka.jpg/'
+  image: 'images/piwakawaka.jpg',
+  name: 'Pīwakawaka'
 }
 
 describe('BirdProfile component test', () => {
   it('BirdProfile contains header, image, found, bird info and back button components', () => {
     // Arrange
-    const image = mockBirdProfileProps
-    const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />,
-      <FoundBtn />,
+    const params = { params: { id: 3 } }
+    const {image, name} = mockBirdProfileProps
+    const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />, name,
+      <Button />,
       <BirdInfoBtn />,
       <BackBtn />]
     // Act
-    const wrapper = mount(<BirdProfile/>)
-    wrapper.setProps({ image: image })
+    const wrapper = mount(<BirdProfile match={params}/>)
+    wrapper.setProps({ image: image, name: name })
     const actual = wrapper.containsAllMatchingElements(expected)
     // Assert
-    expect(actual).toBeTruthy()
+    expect(actual).toBe(expected)
   })
-  it('render unchanged from previous snapshot', () => {
-    const wrapper = mount(<BirdProfile/>)
+  // it('render unchanged from previous snapshot', () => {
+  //   const wrapper = mount(<BirdProfile/>)
 
-    expect(toJson(wrapper)).toMatchSnapshot()
-  })
+  //   expect(toJson(wrapper)).toMatchSnapshot()
+  // })
 })
