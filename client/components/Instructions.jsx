@@ -14,7 +14,9 @@ const Instructions = () => (
     <>
       <BirdHeader />
       <div className='instructionsWrap'>
-        <Button className="clearButton" onClick= {() => handleClick()} size='huge'>Clear Found Birds</Button>
+        <Link to="/">
+          <Button className="clearButton" onClick= {() => handleClick()} size='huge'>Clear Found Birds</Button>
+        </Link>
         <p className="instructions"> He Pokai Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. </p>
         <br></br>
         <p className="instructions">To play, get outside and get bird spotting! Each time you spot a bird that is listed, go into the bird profile and push 'POKAI'. Your found bird will then be added to your inventory of birds.</p>
@@ -31,5 +33,3 @@ const Instructions = () => (
 )
 
 export default Instructions
-
-{ /* <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className={this.toggleColor(bird)}>POKAI!</Button> */ }
