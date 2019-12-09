@@ -12,12 +12,13 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    fetch()
+    return fetch()
       .then(birds => {
         this.setState({
           birds
         })
       })
+      .catch(err => console.log(err.message))
   }
 
   render () {
