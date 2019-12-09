@@ -33,7 +33,7 @@ class App extends React.Component {
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={() => (
-              <Perching />// birds={this.state.birds}/>
+              <Perching />
             )}/>
           </Switch>
         </Router>
