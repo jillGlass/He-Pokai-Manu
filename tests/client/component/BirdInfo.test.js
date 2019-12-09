@@ -4,6 +4,7 @@ import BirdInfo from '../../../client/components/BirdInfo'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BackBtn from '../../../client/components/BackBtn'
 import { Card } from 'semantic-ui-react'
+import { HashRouter as Router } from 'react-router-dom'
 
 const mockBirdInfoProps = {
   name: 'Tui',
@@ -17,7 +18,7 @@ describe('BirdInfo component test', () => {
     const { name, info } = mockBirdInfoProps
     const expected = [<BirdHeader/>, <Card/>, <BackBtn/>]
     // Act
-    const wrapper = mount(<BirdInfo match={params}/>)
+    const wrapper = mount(<Router><BirdInfo match={params}/></Router>)
     wrapper.setProps({ name: name, info: info })
     const actual = wrapper.containsAllMatchingElements(expected)
     // Assert
@@ -29,7 +30,7 @@ describe('BirdInfo component test', () => {
     const { name, info } = mockBirdInfoProps
     const expected = { info: 'info', name: 'name' }
     // Act
-    const wrapper = mount(<BirdInfo match={params}/>)
+    const wrapper = mount(<Router><BirdInfo match={params}/></Router>)
     const actual = wrapper.setProps({ name: name, info: info })
     const actualInfo = wrapper.text()
 

@@ -181,8 +181,6 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                           </Ref>
                         </Button>
                       </InstructionsBtn>
-                      <ConsoleLog />
-                      <ConsoleLog />
                     </a>
                   </LinkAnchor>
                 </Link>
