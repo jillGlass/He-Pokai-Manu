@@ -7,8 +7,22 @@ import BirdProfileTitle from './BirdProfileTitle'
 import { Link } from 'react-router-dom'
 import { Segment, Grid, Button } from 'semantic-ui-react'
 import found from '../api/found'
+import fetch from '../api/birds'
 
 class BirdProfile extends React.Component {
+  state = {
+    birds: []
+  }
+
+  componentDidMount () {
+    fetch()
+      .then(birds => {
+        this.setState({
+          birds
+        })
+      })
+  }
+
   handleClick = (id) => {
     found(id)
   }
@@ -19,9 +33,9 @@ class BirdProfile extends React.Component {
 
   render () {
     const { id } = this.props.match.params
-    const bird = this.props.birds.find(bird => bird.bird_id === Number(id))
-    return (
-      <React.Fragment>
+    const bird = this.state.birds.find(bird => bird.bird_id === Number(id))
+    if (this.state.birds.length !== 0) {
+      return <React.Fragment>
 
         <Segment vertical >
           <Grid container stackable className='birdProfileWrapper' >
@@ -46,7 +60,8 @@ class BirdProfile extends React.Component {
         </Segment>
 
       </React.Fragment>
-    )
+    }
+    return null
   }
 }
 

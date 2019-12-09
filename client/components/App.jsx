@@ -30,11 +30,11 @@ class App extends React.Component {
               return <BirdInfo birds={this.state.birds} {...props}/>
             }}/>
             <Route exact path='/profile/:id' render={(props) => {
-              return <BirdProfile birds={this.state.birds} {...props}/>
+              return <BirdProfile {...props}/>
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
-            <Route exact path='/' render={(props) => (
-              <Perching birds={this.state.birds}/>
+            <Route exact path='/' render={() => (
+              <Perching />// birds={this.state.birds}/>
             )}/>
           </Switch>
         </Router>
