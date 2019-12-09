@@ -15,6 +15,17 @@ router.get('/', (req, res) => {
     })
 })
 
+// Put route for resetting the database
+router.put('/reset', (req, res) => {
+  return db.resetBirds()
+    .then((s) => {
+      res.json(s)
+    })
+    .catch(err => {
+      res.status(500).send('NEVER HAVE I EVER DATABASE ERROR: ' + err.message)
+    })
+})
+
 // Put route for changing bird found status to true in db
 router.put('/:id', (req, res) => {
   const id = Number(req.params.id)
@@ -23,7 +34,7 @@ router.put('/:id', (req, res) => {
       res.json(s)
     })
     .catch(err => {
-      res.status(500).send('NEVER HAVE I EVER DATABASE ERROR: ' + err.message)
+      res.status(500).send('BOUJEE Database error yo! ' + err.message)
     })
 })
 
