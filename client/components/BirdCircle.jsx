@@ -2,18 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 class BirdCircle extends React.Component {
-  id = this.props.id
-  name = this.props.name
-  image = this.props.image
   render () {
+    const { bird_id, name, image, found } = this.props
     return (
       <React.Fragment>
         <div className='wrapperBirds'>
           <div className='birdContainer'>
-            <Link to={`/profile/${this.id}`}>
-              <div className="circleImage"><img className="circleImage" src={ this.image }></img></div>
+            <Link to={`/profile/${bird_id}`}>
+              <div className="circleImage"><img className={ found ? "circleImageFound" : "circleImage"} src={ image }></img></div>
             </Link>
-            <div className='circleTitle'>{ this.name }</div>
+            <div className='circleTitle'>{ name }</div>
           </div>
         </div>
       </React.Fragment>
@@ -22,3 +20,6 @@ class BirdCircle extends React.Component {
 }
 
 export default BirdCircle
+
+
+
