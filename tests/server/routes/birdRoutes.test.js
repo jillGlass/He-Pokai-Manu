@@ -11,7 +11,6 @@ const mockBird = { bird_id: 10, name: 'Thrush', info: 'Thrush like to usually ea
 
 jest.mock('../../../server/db/db', () => ({
   getBirds: () => Promise.resolve(mockBirds),
-  getBird: () => Promise.resolve(mockBird),
   foundBird: () => Promise.resolve(1)
 }))
 
