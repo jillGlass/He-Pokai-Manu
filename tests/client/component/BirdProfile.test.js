@@ -14,7 +14,7 @@ const mockBirdProfileProps = {
 }
 
 describe('BirdProfile component test', () => {
-  it('BirdProfile contains header, image, found, bird info and back button components', () => {
+  xit('BirdProfile contains header, image, found, bird info and back button components', () => {
     // Arrange
     const params = { params: { id: 3 } }
     const {image, name} = mockBirdProfileProps
