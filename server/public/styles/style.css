@@ -66,14 +66,22 @@ body {
   color: white !important;
 }
 
-.foundBtnStyle {
+.pokaiBtnStyle {
   border-radius: 18px;
   width: 313px;
   background-color:#F0CEA0 !important;
   flex-direction:row;
   justify-content:center;
   color: white !important;
+}
 
+.pokaiBtnStyleFound {
+  border-radius: 18px;
+  width: 313px;
+  background-color:#534D41 !important;
+  flex-direction:row;
+  justify-content:center;
+  color: #F3A712 !important;
 }
 
 .backBtnStyle {
