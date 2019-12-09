@@ -61,7 +61,7 @@ body {
 }
 
 .birdProfileTitle {
-  font-size: 34px;
+  font-size: 44px;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -191,7 +191,7 @@ body {
 .instructions {
   color: aliceblue;
   text-align: center;
-  font-size: 14px;
+  font-size: 22px;
   margin-left: 30px;
   margin-right: 30px;
   text-align: justify;
