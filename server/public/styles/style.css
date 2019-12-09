@@ -41,10 +41,7 @@ body {
   margin-top: 0;
 }
 
-.iconInstructions {
-  background-color:  #F3A712 !important;
-  
-}
+
 
 .birdProfileImage {
   height: auto !important;
@@ -127,6 +124,13 @@ body {
   font-family: 'Baloo Bhai', cursive !important;
   color: white;
   padding-top: 10px;
+}
+
+.iconInstructions {
+  background-color:  #F3A712 !important;
+  margin-left:20px;
+ 
+  
 }
 
 .birdInfoWrapper {
