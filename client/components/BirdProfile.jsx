@@ -1,6 +1,5 @@
 import React from 'react'
 import BirdHeader from './BirdHeader'
-// import FoundBtn from './FoundBtn'
 import BirdInfoBtn from './BirdInfoBtn'
 import BackBtn from './BackBtn'
 import BirdProfileTitle from './BirdProfileTitle'

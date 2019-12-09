@@ -5,7 +5,6 @@ import Instructions from './Instructions'
 import BirdProfile from './BirdProfile'
 import BirdInfo from './BirdInfo'
 import fetch from '../api/birds'
-// import ConsoleLog from './ConsoleLog'
 
 class App extends React.Component {
   state = {
