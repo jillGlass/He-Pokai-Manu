@@ -1,14 +1,24 @@
 @-ms-viewport{
   width: device-width;
+  height: device-height;
+}
+
+#root {
+  height: 100%;
 }
 
 body {
-  padding: 0 auto;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   background-color:  #29335C  !important;
   font-family: Omnes;
+  
+  
 }
 
+/* #app {
+  height: 667px;
+} */
 
 
 
@@ -51,10 +61,10 @@ body {
 }
 
 .birdProfileTitle {
-  font-size: 42px;
+  font-size: 34px;
   color: white;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .birdInfoBtnStyle {
@@ -181,16 +191,17 @@ body {
 .instructions {
   color: aliceblue;
   text-align: center;
-  font-size: 22px;
+  font-size: 14px;
   margin-left: 30px;
   margin-right: 30px;
   text-align: justify;
+  
   
 }
 
 .instructionsWrap {
   margin-top: 6rem;
   text-align: center;
-
+  
 }
 
