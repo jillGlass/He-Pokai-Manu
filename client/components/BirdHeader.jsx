@@ -6,13 +6,12 @@ class BirdHeader extends React.Component {
     return (
 
       <Menu className='centerHeader' borderless fixed='top' inverted style = {{ backgroundColor: '#F3A712' }}>
-        <Container>
-          <Menu.Item>
-            He Pokai Manu
-          </Menu.Item>
-        </Container>
-      </Menu>
 
+        <Menu.Item>
+            He Pokai Manu
+        </Menu.Item>
+
+      </Menu>
     )
   }
 }
