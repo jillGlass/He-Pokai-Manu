@@ -125,7 +125,8 @@ body {
   justify-content:center;
   flex-wrap: wrap;
   font-family: 'Baloo Bhai', cursive !important;
-  
+  color: white;
+  padding-top: 10px;
 }
 
 .birdInfoWrapper {
