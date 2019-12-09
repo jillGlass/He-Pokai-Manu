@@ -65,6 +65,3 @@ class BirdProfile extends React.Component {
 }
 
 export default BirdProfile
-
-// style={{ padding: '5px 5px' }}
-// verticalAlign='middle'
