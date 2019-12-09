@@ -5,7 +5,6 @@ import Instructions from './Instructions'
 import BirdProfile from './BirdProfile'
 import BirdInfo from './BirdInfo'
 import fetch from '../api/birds'
-// import ConsoleLog from './ConsoleLog'
 
 class App extends React.Component {
   state = {
@@ -34,7 +33,7 @@ class App extends React.Component {
             }}/>
             <Route exact path='/instructions' component={Instructions}/>
             <Route exact path='/' render={() => (
-              <Perching />// birds={this.state.birds}/>
+              <Perching />
             )}/>
           </Switch>
         </Router>

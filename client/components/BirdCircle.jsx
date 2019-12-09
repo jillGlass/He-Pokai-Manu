@@ -20,6 +20,3 @@ class BirdCircle extends React.Component {
 }
 
 export default BirdCircle
-
-
-

@@ -3,7 +3,6 @@ import { Link, HashRouter as Router } from 'react-router-dom'
 import BirdHeader from './BirdHeader'
 import BackBtn from './BackBtn'
 import BirdInfoText from './BirdInfoText'
-import ConsoleLog from './ConsoleLog'
 
 class BirdInfo extends React.Component {
   render () {

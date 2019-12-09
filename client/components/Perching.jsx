@@ -32,10 +32,6 @@ class Perching extends React.Component {
       <BirdHeader />
       <BirdGrid birds={this.state.birds}/>
       <MainFooter birds={this.state.birds} found={this.state.found}/>
-
-   
-
-
       </>
     )
   }

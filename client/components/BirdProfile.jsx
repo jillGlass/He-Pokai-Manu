@@ -1,6 +1,5 @@
 import React from 'react'
 import BirdHeader from './BirdHeader'
-// import FoundBtn from './FoundBtn'
 import BirdInfoBtn from './BirdInfoBtn'
 import BackBtn from './BackBtn'
 import BirdProfileTitle from './BirdProfileTitle'
@@ -66,6 +65,3 @@ class BirdProfile extends React.Component {
 }
 
 export default BirdProfile
-
-// style={{ padding: '5px 5px' }}
-// verticalAlign='middle'

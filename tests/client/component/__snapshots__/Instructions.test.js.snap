@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Instructions /> component test render unchanged from previous snapshot 1`] = `
+<Instructions>
+  <BirdHeader>
+    <Menu
+      borderless={true}
+      className="centerHeader"
+      fixed="top"
+      inverted={true}
+      style={
+        Object {
+          "backgroundColor": "#F3A712",
+        }
+      }
+    >
+      <div
+        className="ui borderless inverted top fixed centerHeader menu"
+        style={
+          Object {
+            "backgroundColor": "#F3A712",
+          }
+        }
+      >
+        <Container>
+          <div
+            className="ui container"
+          >
+            <MenuItem>
+              <div
+                className="item"
+                onClick={[Function]}
+              >
+                He Pokai Manu
+              </div>
+            </MenuItem>
+          </div>
+        </Container>
+      </div>
+    </Menu>
+  </BirdHeader>
+  <div
+    className="instructionsWrap"
+  >
+    <p
+      className="instructions"
+    >
+       He Pokai-Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature. 
+    </p>
+    <br />
+    <p
+      className="instructions"
+    >
+      To play, get outside and get bird spotting! Each time you spot a bird that is listed, go into the bird profile and push 'POKAI'. Your found bird will then be added to your inventory of birds.
+    </p>
+    <br />
+    <p
+      className="instructions"
+    >
+      How many can you find?
+    </p>
+    <HashRouter>
+      <Router
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+      >
+        <Link
+          to="/"
+        >
+          <LinkAnchor
+            href="#/"
+            navigate={[Function]}
+          >
+            <a
+              href="#/"
+              onClick={[Function]}
+            >
+              <BackBtn>
+                <Button
+                  as="button"
+                  className="backBtnStyle"
+                  size="big"
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big button backBtnStyle"
+                        >
+                          Back
+                        </button>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui big button backBtnStyle"
+                          >
+                            Back
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui big button backBtnStyle"
+                        onClick={[Function]}
+                      >
+                        Back
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </BackBtn>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </Router>
+    </HashRouter>
+  </div>
+</Instructions>
+`;

@@ -1,5 +1,4 @@
 import React from 'react'
-import ConsoleLog from './ConsoleLog'
 
 class BirdInfoText extends React.Component {
   render () {
