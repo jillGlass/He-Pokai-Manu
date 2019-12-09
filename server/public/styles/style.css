@@ -7,12 +7,14 @@
   height: 100%;
 }
 
+*{
+  font-family: 'Baloo Bhai', cursive !important;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color:  #29335C  !important;
-  font-family: Omnes;
-  
   
 }
 
@@ -135,8 +137,8 @@ body {
   text-align: justify;
 }
 
-.centerHeader {
-  font-size: 1.5rem;
+.ui.menu.centerHeader {
+  font-size: 2rem;
   display:flex;
   flex-direction:row;
   justify-content:center;
