@@ -5,8 +5,8 @@ import BirdProfile from '../../../client/components/BirdProfile'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BirdProfileTitle from '../../../client/components/BirdProfileTitle'
 import BackBtn from '../../../client/components/BackBtn'
-import FoundBtn from '../../../client/components/FoundBtn'
 import BirdInfoBtn from '../../../client/components/BirdInfoBtn'
+import { Button } from 'semantic-ui-react'
 
 const mockBirdProfileProps = {
   image: 'public/images/piwakawaka.jpg/'
@@ -17,7 +17,7 @@ describe('BirdProfile component test', () => {
     // Arrange
     const image = mockBirdProfileProps
     const expected = [<BirdHeader/>, <img/>, image, <BirdProfileTitle />,
-      <FoundBtn />,
+      <Button />,
       <BirdInfoBtn />,
       <BackBtn />]
     // Act
