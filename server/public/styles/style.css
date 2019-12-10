@@ -86,7 +86,7 @@ body {
 .pokaiBtnStyleFound {
   border-radius: 18px;
   width: 313px;
-  background-color:#534D41 !important;
+  background-color:#F0CEA050 !important;
   flex-direction:row;
   justify-content:center;
   color: #F3A712 !important;
@@ -161,7 +161,6 @@ body {
   font-size: 22px;
   line-height: 1.2;
   text-align: justify;
-  color: rgb(236, 31, 31);
 }
 
 .ui.menu.centerHeader {
@@ -236,3 +235,20 @@ body {
   
 }
 
+.notThreatened {
+  color: #3A7913;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.threatened {
+  color: #B22222;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.atRisk {
+  color: #FF7605;
+  text-align: justify;
+  font-size: 22px;
+}
