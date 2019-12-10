@@ -134,7 +134,15 @@ body {
 .iconInstructions {
   background-color:  #F3A712 !important;
   margin-left:20px;
+  color: white !important;
  
+  
+}
+
+.iconButton {
+  padding: 0 !important;
+  border:none;
+  
   
 }
 
@@ -142,6 +150,9 @@ body {
   text-align: center;
 }
 
+.footerText {
+  padding-left: 20px;
+}
 .birdInfoTextWrapper {
   margin-top: 6rem;
   color: white;

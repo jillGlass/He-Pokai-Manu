@@ -8,6 +8,8 @@ class MainFooter extends React.Component {
 toggleMessage = () => {
   if (this.props.found === 1) {
     return 'You have found 1 bird!'
+  } else if (this.props.found === 20) {
+    return 'You have found all of the birds!'
   } else return `You have found ${this.props.found} birds!`
 }
 
@@ -15,16 +17,16 @@ render () {
   return (
     <Menu fixed='bottom' inverted style = {{ backgroundColor: '#F3A712' }}>
       <Container className="footer" >
-       
-        {this.toggleMessage()}
-        <br></br>
-            Can you find them all?
-        
-        <Router>
-          <Link to='/instructions'>
-            <InstructionsBtn />
-          </Link>
-        </Router>
+        <Menu.Item className ='footerText borderless'>
+          {this.toggleMessage()}
+        </Menu.Item>
+        <Menu.Item className ='iconButton borderless' position='right'>
+          <Router>
+            <Link to='/instructions'>
+              <InstructionsBtn />
+            </Link>
+          </Router>
+        </Menu.Item>
       </Container>
     </Menu>
   )
