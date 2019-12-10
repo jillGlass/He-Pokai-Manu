@@ -18,11 +18,12 @@ class App extends React.Component {
           birds
         })
       })
+      .catch(err => console.log(err.message))
   }
 
   render () {
     return this.state.birds.length === 0 ? null : (
-      <>
+      <React.Fragment>
         <Router>
           <Switch>
             <Route exact path='/profile/:id/info' render={(props) => {
@@ -37,7 +38,7 @@ class App extends React.Component {
             )}/>
           </Switch>
         </Router>
-      </>
+      </React.Fragment>
     )
   }
 }
