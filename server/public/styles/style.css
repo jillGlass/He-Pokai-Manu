@@ -134,6 +134,7 @@ body {
 .iconInstructions {
   background-color:  #F3A712 !important;
   margin-left:20px;
+  color: white !important;
  
   
 }
@@ -141,6 +142,7 @@ body {
 .iconButton {
   padding: 0 !important;
   border:none;
+  
   
 }
 
