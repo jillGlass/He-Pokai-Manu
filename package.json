@@ -9,8 +9,9 @@
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
     "dev": "nodemon . & webpack --watch",
-    "server": "node server",
-    "start": "node server",
+    "server": "node .",
+    "start": "npm run server",
+    "postinstall": "webpack",
     "test": "jest --watchAll --noStackTrace",
     "knex": "knex --knexfile server/db/knexfile.js"
   },
