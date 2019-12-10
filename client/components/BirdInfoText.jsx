@@ -2,7 +2,6 @@ import React from 'react'
 
 class BirdInfoText extends React.Component {
   toggleColor (bird) {
-    console.log(bird.category)
     if (bird.category === 'notThreatened') {
       return 'notThreatened'
     } else if (bird.category === 'atRisk') {
