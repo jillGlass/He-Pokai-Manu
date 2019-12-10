@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BirdInfo component test render unchanged from previous snapshot 1`] = `
+<HashRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <BirdInfo
+      birds={
+        Array [
+          Object {
+            "bird_id": 1,
+            "found": 1,
+            "image": "/images/tui.jpg",
+            "info": "Tui are unique to New Zealand and belong to the honey-eater family which means that they feed mainly on nectar from the flowers of native plants. They can be quite aggressive! They will chase other Tui away from food and tasty nectar. Tui are found throughout the North, South and Stewart Islands of New Zealand.",
+            "name": "Tui",
+          },
+        ]
+      }
+      match={
+        Object {
+          "params": Object {
+            "id": "1",
+          },
+        }
+      }
+    >
+      <div
+        className="birdInfoWrapper"
+      >
+        <BirdHeader>
+          <Menu
+            borderless={true}
+            className="centerHeader"
+            fixed="top"
+            inverted={true}
+            style={
+              Object {
+                "backgroundColor": "#F3A712",
+              }
+            }
+          >
+            <div
+              className="ui borderless inverted top fixed centerHeader menu"
+              style={
+                Object {
+                  "backgroundColor": "#F3A712",
+                }
+              }
+            >
+              <MenuItem>
+                <div
+                  className="item"
+                  onClick={[Function]}
+                >
+                  He Pokai Manu
+                </div>
+              </MenuItem>
+            </div>
+          </Menu>
+        </BirdHeader>
+        <BirdInfoText
+          birds={
+            Array [
+              Object {
+                "bird_id": 1,
+                "found": 1,
+                "image": "/images/tui.jpg",
+                "info": "Tui are unique to New Zealand and belong to the honey-eater family which means that they feed mainly on nectar from the flowers of native plants. They can be quite aggressive! They will chase other Tui away from food and tasty nectar. Tui are found throughout the North, South and Stewart Islands of New Zealand.",
+                "name": "Tui",
+              },
+            ]
+          }
+          match={
+            Object {
+              "params": Object {
+                "id": "1",
+              },
+            }
+          }
+        >
+          <div
+            className="birdInfoTextWrapper"
+          >
+            <div
+              className="birdInfoTextName"
+            >
+              Tui
+            </div>
+            <div
+              className="birdInfoTextInfo"
+            >
+              Tui are unique to New Zealand and belong to the honey-eater family which means that they feed mainly on nectar from the flowers of native plants. They can be quite aggressive! They will chase other Tui away from food and tasty nectar. Tui are found throughout the North, South and Stewart Islands of New Zealand.
+            </div>
+            <br />
+            <div
+              className="birdInfoTextInfo"
+            >
+              Conservation Status:
+            </div>
+            <div
+              className="threatened"
+            />
+          </div>
+        </BirdInfoText>
+        <Link
+          to="/profile/1"
+        >
+          <LinkAnchor
+            href="#/profile/1"
+            navigate={[Function]}
+          >
+            <a
+              href="#/profile/1"
+              onClick={[Function]}
+            >
+              <BackBtn
+                className="backBtnStyle"
+              >
+                <Button
+                  as="button"
+                  className="backBtnStyle"
+                  size="big"
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui big button backBtnStyle"
+                        >
+                          Back
+                        </button>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui big button backBtnStyle"
+                          >
+                            Back
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui big button backBtnStyle"
+                        onClick={[Function]}
+                      >
+                        Back
+                      </button>
+                    </RefFindNode>
+                  </Ref>
+                </Button>
+              </BackBtn>
+            </a>
+          </LinkAnchor>
+        </Link>
+      </div>
+    </BirdInfo>
+  </Router>
+</HashRouter>
+`;

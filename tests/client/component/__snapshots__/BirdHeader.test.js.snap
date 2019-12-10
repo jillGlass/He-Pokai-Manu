@@ -21,20 +21,14 @@ exports[`<BirdHeader /> component test render unchanged from previous snapshot 1
         }
       }
     >
-      <Container>
+      <MenuItem>
         <div
-          className="ui container"
+          className="item"
+          onClick={[Function]}
         >
-          <MenuItem>
-            <div
-              className="item"
-              onClick={[Function]}
-            >
-              He Pokai Manu
-            </div>
-          </MenuItem>
+          He Pokai Manu
         </div>
-      </Container>
+      </MenuItem>
     </div>
   </Menu>
 </BirdHeader>

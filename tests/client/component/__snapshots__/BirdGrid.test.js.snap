@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BirdGrid and BirdCircle Component Tests: render unchanged from previous snapshot 1`] = `
+<HashRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <BirdGrid
+      birds={
+        Array [
+          Object {
+            "bird_id": 9,
+            "found": false,
+            "image": "public/images/californiaquail.jpg/",
+            "info": "Quail like to eat seeds...",
+            "name": "California Quail",
+          },
+          Object {
+            "bird_id": 10,
+            "found": false,
+            "image": "public/images/thrush.jpg/",
+            "info": "Thrush like to usually eat from the ground...",
+            "name": "Thrush",
+          },
+        ]
+      }
+    >
+      <div
+        className="gridWrapUpper"
+      >
+        <Grid
+          className="gridWrap"
+          columns={2}
+          doubling={true}
+        >
+          <div
+            className="ui doubling two column grid gridWrap"
+          >
+            <BirdCircle
+              bird_id={9}
+              found={false}
+              image="public/images/californiaquail.jpg/"
+              info="Quail like to eat seeds..."
+              key="California Quail"
+              name="California Quail"
+            >
+              <div
+                className="wrapperBirds"
+              >
+                <div
+                  className="birdContainer"
+                >
+                  <Link
+                    to="/profile/9"
+                  >
+                    <LinkAnchor
+                      href="#/profile/9"
+                      navigate={[Function]}
+                    >
+                      <a
+                        href="#/profile/9"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="circleImage"
+                        >
+                          <img
+                            className="circleImage"
+                            src="public/images/californiaquail.jpg/"
+                          />
+                        </div>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                  <div
+                    className="circleTitle"
+                  >
+                    California Quail
+                  </div>
+                </div>
+              </div>
+            </BirdCircle>
+            <BirdCircle
+              bird_id={10}
+              found={false}
+              image="public/images/thrush.jpg/"
+              info="Thrush like to usually eat from the ground..."
+              key="Thrush"
+              name="Thrush"
+            >
+              <div
+                className="wrapperBirds"
+              >
+                <div
+                  className="birdContainer"
+                >
+                  <Link
+                    to="/profile/10"
+                  >
+                    <LinkAnchor
+                      href="#/profile/10"
+                      navigate={[Function]}
+                    >
+                      <a
+                        href="#/profile/10"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="circleImage"
+                        >
+                          <img
+                            className="circleImage"
+                            src="public/images/thrush.jpg/"
+                          />
+                        </div>
+                      </a>
+                    </LinkAnchor>
+                  </Link>
+                  <div
+                    className="circleTitle"
+                  >
+                    Thrush
+                  </div>
+                </div>
+              </div>
+            </BirdCircle>
+          </div>
+        </Grid>
+      </div>
+    </BirdGrid>
+  </Router>
+</HashRouter>
+`;
