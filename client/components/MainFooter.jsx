@@ -15,11 +15,11 @@ render () {
   return (
     <Menu fixed='bottom' inverted style = {{ backgroundColor: '#F3A712' }}>
       <Container className="footer" >
-       
+
         {this.toggleMessage()}
         <br></br>
             Can you find them all?
-        
+
         <Router>
           <Link to='/instructions'>
             <InstructionsBtn />
