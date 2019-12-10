@@ -2,6 +2,7 @@ import React from 'react'
 import BirdProfile from '../../../client/components/BirdProfile'
 import { HashRouter as Router } from 'react-router-dom'
 import { mount } from 'enzyme'
+import toJson from 'enzyme-to-json'
 
 const mockBirds = [
   { bird_id: 1, name: 'fail', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false },
@@ -9,7 +10,7 @@ const mockBirds = [
   { bird_id: 3, name: 'Pīwakawaka', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false },
   { bird_id: 4, name: 'fail', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false },
   { bird_id: 5, name: 'fail', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false },
-  { bird_id: 6, name: 'fail', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false },
+  { bird_id: 6, name: 'fail', info: 'Spot these friendly birds by their large tail. Also known as fantail, these birds build their nests with small materials woven with cobwebs and like to eat moths, flies, beetles and spiders. They also love to have a bird-bath! They live all over New Zealand, even in the Chatham Islands. You can find them in native and introduced forest, farm shelterbelts, orchards as well as suburban parks and gardens.', image: '/images/piwakawaka.jpg', found: false }
 ]
 
 jest.mock('../../../client/api/birds', () =>
@@ -37,11 +38,20 @@ test('img element renders with correct data from componentDidMount call', () => 
   const component = <Router><BirdProfile match={match} /></Router>
   // Act
   const wrapper = mount(component)
-  
+
   // Assert
   return Promise
     .resolve(wrapper)
     .then(() => wrapper.update())
     .then((wrapper) => wrapper.find(BirdProfile).find(node).prop('alt'))
     .then((actual) => expect(actual).toEqual(expected.name))
+})
+
+describe('<Perching /> component test', () => {
+  it('render unchanged from previous snapshot', () => {
+    const match = { params: { id: '3' } }
+    const wrapper = mount(<Router><BirdProfile match={match}/></Router>)
+
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 })
