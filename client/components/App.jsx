@@ -12,17 +12,17 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    return fetch()
+    fetch()
       .then(birds => {
         this.setState({
           birds
         })
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log(err.message))
   }
 
   render () {
-    return this.state.birds.length === 0 ? '' : (
+    return this.state.birds.length === 0 ? null : (
       <React.Fragment>
         <Router>
           <Switch>
