@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   render () {
-    return this.state.birds.length === 0 ? '' : (
+    return this.state.birds.length === 0 ? null : (
       <>
         <Router>
           <Switch>
