@@ -2,24 +2,27 @@
   width: device-width;
   height: device-height;
 }
+/* div.ex2 {
+  overflow-y: hidden;
+} */
+
 
 #root {
   height: 100%;
+  
 }
+
+/* *{
+  font-family: 'Baloo Bhai', cursive !important;
+} */
 
 body {
   padding: 0;
   margin: 0;
   background-color:  #29335C  !important;
-  font-family: Omnes;
-  
+  font-family: 'Baloo Bhai', cursive !important;
   
 }
-
-/* #app {
-  height: 667px;
-} */
-
 
 
 .gridWrap {
@@ -29,7 +32,7 @@ body {
 
 .gridWrapUpper {
   margin-bottom: 110px;
-  margin-top: 30px;
+  margin-top: 55px;
  
 }
 
@@ -43,9 +46,7 @@ body {
   margin-top: 0;
 }
 
-.iconInstructions {
-  background-color: #F3A712  !important;
-}
+
 
 .birdProfileImage {
   height: auto !important;
@@ -74,6 +75,7 @@ body {
   flex-direction:row;
   justify-content:center;
   color: white !important;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .pokaiBtnStyle {
@@ -83,15 +85,17 @@ body {
   flex-direction:row;
   justify-content:center;
   color: white !important;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .pokaiBtnStyleFound {
   border-radius: 18px;
   width: 313px;
-  background-color:#534D41 !important;
+  background-color:#F0CEA050 !important;
   flex-direction:row;
   justify-content:center;
   color: #F3A712 !important;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .backBtnStyle {
@@ -101,7 +105,19 @@ body {
   flex-direction:row;
   justify-content:center;
   color: white !important;
+  font-family: 'Baloo Bhai', cursive !important;
   
+}
+
+.clearButton {
+  border-radius: 18px;
+  background-color:#F3A712 !important;
+  flex-direction:row;
+  justify-content:center;
+  color: white !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .footer {
@@ -110,7 +126,18 @@ body {
   flex-direction:row;
   justify-content:center;
   flex-wrap: wrap;
+  font-family: 'Baloo Bhai', cursive !important;
+  color: white;
+  padding-top: 10px;
 }
+
+.iconInstructions {
+  background-color:  #F3A712 !important;
+  margin-left:20px;
+ 
+  
+}
+
 .birdInfoWrapper {
   text-align: center;
 }
@@ -135,15 +162,25 @@ body {
   text-align: justify;
 }
 
-.centerHeader {
-  font-size: 1.5rem;
+.birdInfoTextStatus {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.ui.menu.centerHeader {
+  font-size: 1.2rem;
   display:flex;
+  padding: 0;
+  margin: 0;
   flex-direction:row;
   justify-content:center;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .birdInfoCard {
   margin-top: 30px;
+  font-family: 'Baloo Bhai', cursive !important;
 }
 
 .birdContainer {
@@ -194,14 +231,29 @@ body {
   font-size: 22px;
   margin-left: 30px;
   margin-right: 30px;
-  text-align: justify;
-  
-  
+  text-align: justify; 
 }
 
 .instructionsWrap {
-  margin-top: 6rem;
+  margin-top: 4.5rem;
   text-align: center;
   
 }
 
+.notThreatened {
+  color: #3A7913;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.threatened {
+  color: #B22222;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.atRisk {
+  color: #FF7605;
+  text-align: justify;
+  font-size: 22px;
+}
