@@ -142,12 +142,11 @@ body {
 .iconButton {
   padding: 0 !important;
   border:none;
-  
-  
 }
 
 .birdInfoWrapper {
   text-align: center;
+  overflow-y: 'hidden'
 }
 
 .footerText {
@@ -171,6 +170,7 @@ body {
   font-size: 22px;
   line-height: 1.2;
   text-align: justify;
+  white-space: pre-line;
 }
 
 .birdInfoTextStatus {
