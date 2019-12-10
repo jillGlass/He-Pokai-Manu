@@ -3,6 +3,7 @@ import { mount } from 'enzyme'
 import BirdGrid from '../../../client/components/BirdGrid'
 import BirdCircle from '../../../client/components/BirdCircle'
 import { HashRouter as Router } from 'react-router-dom'
+import toJson from 'enzyme-to-json'
 
 describe('BirdGrid and BirdCircle Component Tests:', () => {
   // Arrange
@@ -12,8 +13,12 @@ describe('BirdGrid and BirdCircle Component Tests:', () => {
   it('The BirdGrid component passes the appropriate info to the BirdCircle component', () => {
     // Act
     const wrapper = mount(<Router><BirdGrid birds={birds}/></Router>)
-    console.log(wrapper.html())
     // Assert
     expect(wrapper.find(BirdCircle)).toHaveLength(array)
+  })
+  it('render unchanged from previous snapshot', () => {
+    const wrapper = mount(<Router><BirdGrid birds={birds}/></Router>)
+
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })

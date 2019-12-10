@@ -7,6 +7,10 @@ const mockBirds = [{ bird_id: 1, name: 'tui', info: 'some stuff', found: 0, imag
 jest.mock('../../client/api/birds', () =>
   () => Promise.resolve(mockBirds))
 
+test('jest installed correctly', () => {
+  expect(true).toBeTruthy()
+})
+
 describe('App successfully mounts', () => {
   it('state populates on componentDidMount', () => {
     // Arrange
