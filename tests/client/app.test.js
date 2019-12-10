@@ -17,7 +17,6 @@ describe('App successfully mounts', () => {
     // Assert
     return Promise
       .resolve(wrapper)
-      // .then(() => wrapper.update())
       .then(() => wrapper.state('birds'))
       .then((state) => expect(state).toEqual(expected))
       .catch(err => expect(err).toBeNull())
