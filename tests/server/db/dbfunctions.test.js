@@ -31,4 +31,18 @@ describe('Bird database function tests', () => {
         expect(bird).toBeTruthy()
       })
   })
+  it('resetBirds returns 0 as expected', () => {
+    expect.assertions(1)
+    return db.resetBirds(testDb)
+      .then(output => expect(output).toBe(0))
+  })
+  it('resetBirds updates database so that no birds have found: 1', () => {
+    expect.assertions(1)
+    return db.resetBirds(testDb)
+      .then(() => {
+        return db.getBirds(testDb)
+          .then((birds) => birds.filter(bird => bird.found === 1))
+          .then(trueBirds => expect(trueBirds).toHaveLength(0))
+      })
+  })
 })
