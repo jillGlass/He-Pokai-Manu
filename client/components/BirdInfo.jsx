@@ -8,7 +8,7 @@ class BirdInfo extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div className='birdInfoWrapper'>
+        <div className='birdInfoWrapper' >
           <BirdHeader />
           <BirdInfoText birds={this.props.birds} {...this.props}/>
           <Link to={`/profile/${this.props.match.params.id}`}>
