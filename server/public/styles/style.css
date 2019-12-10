@@ -138,10 +138,19 @@ body {
   
 }
 
+.iconButton {
+  padding: 0 !important;
+  border:none;
+  
+}
+
 .birdInfoWrapper {
   text-align: center;
 }
 
+.footerText {
+  padding-left: 20px;
+}
 .birdInfoTextWrapper {
   margin-top: 6rem;
   color: white;
