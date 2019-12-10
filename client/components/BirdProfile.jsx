@@ -30,7 +30,7 @@ class BirdProfile extends React.Component {
 
   toggleColor = (bird) => bird.found ? ' pokaiBtnStyleFound' : 'pokaiBtnStyle'
 
-  togglePokai = (bird) => bird.found ? 'Achieved' : 'Pokai'
+  togglePokai = (bird) => bird.found ? 'Achieved!' : 'Pokai'
 
   render () {
     const { id } = this.props.match.params
@@ -45,7 +45,7 @@ class BirdProfile extends React.Component {
             </div>
             <BirdProfileTitle name={bird.name}/>
             <Link to={this.toggleLink(bird)}>
-              <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className={this.toggleColor(bird)}>POKAI!</Button>
+              <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className={this.toggleColor(bird)}>{this.togglePokai(bird)}</Button>
             </Link>
             <Link to={`/profile/${id}/info`}>
               <BirdInfoBtn />
