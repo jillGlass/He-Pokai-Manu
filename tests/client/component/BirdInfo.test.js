@@ -4,6 +4,7 @@ import BirdInfo from '../../../client/components/BirdInfo'
 import BirdHeader from '../../../client/components/BirdHeader'
 import BackBtn from '../../../client/components/BackBtn'
 import { HashRouter as Router } from 'react-router-dom'
+import toJson from 'enzyme-to-json'
 
 const mockBirdsArray = [{
   bird_id: 1,
@@ -38,5 +39,11 @@ describe('BirdInfo component test', () => {
     expect(actual).hasOwnProperty('name')
     expect(actual).hasOwnProperty('info')
     expect(actualInfo).toContain(info)
+  })
+  it('render unchanged from previous snapshot', () => {
+    const match = { params: { id: '1' } }
+    const wrapper = mount(<Router><BirdInfo match={match} birds={mockBirdsArray}/></Router>)
+
+    expect(toJson(wrapper)).toMatchSnapshot()
   })
 })
