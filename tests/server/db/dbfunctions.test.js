@@ -12,7 +12,7 @@ describe('Bird database function tests', () => {
   it('get birds returns an array the length of all the bird info', () => {
     expect.assertions(1)
 
-    const expected = 10
+    const expected = 16
 
     return db.getBirds(testDb)
       .then(birds => {
