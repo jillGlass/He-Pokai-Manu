@@ -30,6 +30,8 @@ class BirdProfile extends React.Component {
 
   toggleColor = (bird) => bird.found ? ' pokaiBtnStyleFound' : 'pokaiBtnStyle'
 
+  togglePokai = (bird) => bird.found ? 'Achieved' : 'Pokai'
+
   render () {
     const { id } = this.props.match.params
     const bird = this.state.birds.find(bird => bird.bird_id === Number(id))
