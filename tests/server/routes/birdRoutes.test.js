@@ -10,13 +10,14 @@ const mockBirds = [{ bird_id: 1, name: 'Tui', info: 'Tui are unique to New Zeala
 
 jest.mock('../../../server/db/db', () => ({
   getBirds: () => Promise.resolve(mockBirds),
-  foundBird: () => Promise.resolve(1)
+  foundBird: () => Promise.resolve(1),
+  resetBirds: () => Promise.resolve(0)
 }))
 
 describe('Server side routes call db functions correctly', () => {
-  it('GET /', () => {
+  it('GET /birds', () => {
     return request(server)
-      .get('/api/v1/')
+      .get('/api/v1/birds')
       .then((res) => {
         expect(res.body).toEqual(mockBirds)
       })
@@ -26,6 +27,13 @@ describe('Server side routes call db functions correctly', () => {
       .put('/api/v1/3')
       .then((res) => {
         expect(res.body).toEqual(1)
+      })
+  })
+  it('PUT /reset', () => {
+    return request(server)
+      .put('/api/v1/reset')
+      .then(res => {
+        expect(res.body).toEqual(0)
       })
   })
 })
