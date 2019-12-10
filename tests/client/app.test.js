@@ -1,12 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import App from '../../client/components/App'
-// import BirdProfile from '../../client/components/BirdProfile'
-// import BirdInfo from '../../client/components/BirdInfo'
-// import Instructions from '../../client/components/Instructions'
-// import Perching from '../../client/components/Perching'
-// import { HashRouter as Router, Route, Switch } from 'react-router-dom'
-// import fetch from '../../client/api/birds'
 
 const mockBirds = [{ bird_id: 1, name: 'tui', info: 'some stuff', found: 0, image: 'someimagepath' }]
 
