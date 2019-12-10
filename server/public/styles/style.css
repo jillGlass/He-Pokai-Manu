@@ -157,6 +157,13 @@ body {
   text-align: justify;
 }
 
+.birdInfoTextStatus {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: justify;
+  color: rgb(236, 31, 31);
+}
+
 .ui.menu.centerHeader {
   font-size: 2rem;
   display:flex;

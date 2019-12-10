@@ -10,6 +10,9 @@ class BirdInfoText extends React.Component {
         <div className='birdInfoTextWrapper'>
           <div className='birdInfoTextName'>{bird.name}</div>
           <div className='birdInfoTextInfo'>{bird.info}</div>
+          <br></br>
+          <div className='birdInfoTextStatus'>Conservation Status:</div>
+          <div className='birdInfoTextInfo'>{bird.status}</div>
         </div>
       </React.Fragment>
     )
