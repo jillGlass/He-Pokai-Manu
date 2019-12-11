@@ -30,32 +30,30 @@ class BirdProfile extends React.Component {
 
   toggleColor = (bird) => bird.found ? ' pokaiBtnStyleFound' : 'pokaiBtnStyle'
 
-  togglePokai = (bird) => bird.found ? 'Achieved' : 'Pokai'
+  togglePokai = (bird) => bird.found ? 'Achieved!' : 'Pokai'
 
   render () {
     const { id } = this.props.match.params
     const bird = this.state.birds.find(bird => bird.bird_id === Number(id))
     return this.state.birds.length === 0 ? null : <React.Fragment>
       <Segment vertical >
-        <Grid container stackable className='birdProfileWrapper'>
-          <Grid.Column>
-            <Grid.Row>
-              <BirdHeader />
-              <div>
-                <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
-              </div>
-              <BirdProfileTitle name={bird.name}/>
-              <Link to={this.toggleLink(bird)}>
-                <Button onClick= {() => this.handleClick(id)} className='pokaiBtnStyle'  size='big' className={this.toggleColor(bird)}>POKAI!</Button>
-              </Link>
-              <Link to={`/profile/${id}/info`}>
-                <BirdInfoBtn />
-              </Link>
-              <Link to="/">
-                <BackBtn />
-              </Link>
-            </Grid.Row>
-          </Grid.Column>
+        <Grid container stackable className='birdProfileWrapper' >
+          <Grid.Row>
+            <BirdHeader />
+            <div>
+              <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
+            </div>
+            <BirdProfileTitle name={bird.name}/>
+            <Link to={this.toggleLink(bird)}>
+              <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className={this.toggleColor(bird)}>{this.togglePokai(bird)}</Button>
+            </Link>
+            <Link to={`/profile/${id}/info`}>
+              <BirdInfoBtn />
+            </Link>
+            <Link to="/">
+              <BackBtn />
+            </Link>
+          </Grid.Row>
         </Grid>
       </Segment>
     </React.Fragment>
