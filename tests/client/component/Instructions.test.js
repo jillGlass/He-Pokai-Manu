@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { HashRouter as Router } from 'react-router-dom'
 import { mount } from 'enzyme'
 import toJson from 'enzyme-to-json'
 
@@ -11,13 +11,13 @@ describe('<Instructions /> component test', () => {
     const expected = 'He Pokai-Manu is a treasure-hunt game for birds in Aotearoa. We aim to help younger Kiwis learn more about our bird life in an exciting way, while getting them outside and interested in nature.'
 
     // Act
-    const wrapper = mount(<Instructions />)
-    const actual = wrapper.text()
+    const wrapper = mount(<Router><Instructions /></Router>)
+    const actual = wrapper.find('.instructions')
     // Assert
-    expect(actual).toContain(expected)
+    expect(actual).toHaveLength(3)
   })
   it('render unchanged from previous snapshot', () => {
-    const wrapper = mount(<Instructions/>)
+    const wrapper = mount(<Router><Instructions /></Router>)
 
     expect(toJson(wrapper)).toMatchSnapshot()
   })

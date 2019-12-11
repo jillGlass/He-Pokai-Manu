@@ -22,20 +22,14 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
           }
         }
       >
-        <Container>
+        <MenuItem>
           <div
-            className="ui container"
+            className="item"
+            onClick={[Function]}
           >
-            <MenuItem>
-              <div
-                className="item"
-                onClick={[Function]}
-              >
-                He Pokai Manu
-              </div>
-            </MenuItem>
+            He Pokai Manu
           </div>
-        </Container>
+        </MenuItem>
       </div>
     </Menu>
   </BirdHeader>
@@ -83,16 +77,9 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
           <div
             className="ui container footer"
           >
-            <MenuItem>
-              <div
-                className="item"
-                onClick={[Function]}
-              >
-                You have found 0 birds!
-                <br />
-                Can you find them all?
-              </div>
-            </MenuItem>
+            You have found 0 birds!
+            <br />
+            Can you find them all?
             <HashRouter>
               <Router
                 history={
@@ -132,13 +119,13 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                           as="button"
                           className="iconInstructions"
                           icon={true}
-                          size="big"
+                          size="huge"
                         >
                           <Ref
                             innerRef={
                               Object {
                                 "current": <button
-                                  class="ui big icon button iconInstructions"
+                                  class="ui huge icon button iconInstructions"
                                 >
                                   <i
                                     aria-hidden="true"
@@ -152,7 +139,7 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                               innerRef={
                                 Object {
                                   "current": <button
-                                    class="ui big icon button iconInstructions"
+                                    class="ui huge icon button iconInstructions"
                                   >
                                     <i
                                       aria-hidden="true"
@@ -163,7 +150,7 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                               }
                             >
                               <button
-                                className="ui big icon button iconInstructions"
+                                className="ui huge icon button iconInstructions"
                                 onClick={[Function]}
                               >
                                 <Icon
@@ -181,8 +168,6 @@ exports[`<Perching /> component test render unchanged from previous snapshot 1`]
                           </Ref>
                         </Button>
                       </InstructionsBtn>
-                      <ConsoleLog />
-                      <ConsoleLog />
                     </a>
                   </LinkAnchor>
                 </Link>

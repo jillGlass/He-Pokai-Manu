@@ -18,6 +18,7 @@ class Perching extends React.Component {
           birds
         })
       })
+      .catch(err => err.message)
   }
 
   counter = (birds) => birds.reduce((found, bird) => {
