@@ -5,6 +5,10 @@ import BackBtn from './BackBtn'
 import BirdInfoText from './BirdInfoText'
 
 class BirdInfo extends React.Component {
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
   render () {
     return (
       <React.Fragment>
