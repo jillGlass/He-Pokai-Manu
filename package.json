@@ -15,7 +15,7 @@
     "dev": "nodemon . & webpack --watch",
     "server": "node .",
     "start": "npm run server",
-    "postinstall": "webpack && knex migrate:latest",
+    "postinstall": "webpack && knex --knexfile server/db/knexfile.js migrate:latest",
     "test": "jest --watchAll --noStackTrace",
     "knex": "knex --knexfile server/db/knexfile.js"
   },
