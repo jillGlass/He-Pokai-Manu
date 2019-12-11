@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from './ScrollToTop'
 
 class BirdInfoText extends React.Component {
   toggleColor (bird) {
@@ -15,6 +16,7 @@ class BirdInfoText extends React.Component {
 
     return (
       <React.Fragment>
+        <ScrollToTop />
         <div className='birdInfoTextWrapper'>
           <div className='birdInfoTextName'>{bird.name}</div>
           <div className='birdInfoTextInfo'>{bird.info}</div>

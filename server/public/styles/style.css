@@ -115,7 +115,7 @@ body {
 
 .clearButton {
   border-radius: 18px;
-  background-color:#F3A712 !important;
+  background-color:rgb(17, 151, 51) !important;
   flex-direction:row;
   justify-content:center;
   color: white !important;
