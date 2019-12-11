@@ -10,8 +10,14 @@ function handleClick () {
   reset()
 }
 
-const Instructions = () => (
-    <>
+class Instructions extends React.Component {
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
+  render () {
+    return (
+     <>
       <BirdHeader />
       <div className='instructionsWrap'>
         <Link to="/">
@@ -27,9 +33,10 @@ const Instructions = () => (
             <BackBtn/>
           </Link>
         </Router>
-
       </div>
     </>
-)
+    )
+  }
+}
 
 export default Instructions
