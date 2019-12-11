@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import { Segment, Grid, Button } from 'semantic-ui-react'
 import fetch from '../api/birds'
 import found from '../api/found'
+import ScrollToTop from './ScrollToTop'
 
 class BirdProfile extends React.Component {
   state = {
@@ -36,6 +37,7 @@ class BirdProfile extends React.Component {
     const { id } = this.props.match.params
     const bird = this.state.birds.find(bird => bird.bird_id === Number(id))
     return this.state.birds.length === 0 ? null : <React.Fragment>
+      <ScrollToTop />
       <Segment vertical >
         <Grid container stackable className='birdProfileWrapper' >
           <Grid.Column>
