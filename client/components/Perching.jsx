@@ -3,6 +3,7 @@ import BirdHeader from './BirdHeader'
 import BirdGrid from './BirdGrid'
 import MainFooter from './MainFooter'
 import fetch from '../api/birds'
+import ScrollToTop from './ScrollToTop'
 
 class Perching extends React.Component {
   state = {
@@ -30,6 +31,7 @@ class Perching extends React.Component {
   render () {
     return (
       <>
+      <ScrollToTop />
       <BirdHeader />
       <BirdGrid birds={this.state.birds}/>
       <MainFooter birds={this.state.birds} found={this.state.found}/>
