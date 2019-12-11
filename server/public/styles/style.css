@@ -2,9 +2,11 @@
   width: device-width;
   height: device-height;
 }
-/* div.ex2 {
-  overflow-y: hidden;
-} */
+
+*, ::after, ::before {
+ box-sizing: unset !important;
+  -webkit-box-sizing: unset !important;
+}
 
 
 #root {
@@ -12,9 +14,7 @@
   
 }
 
-/* *{
-  font-family: 'Baloo Bhai', cursive !important;
-} */
+
 
 body {
   padding: 0;
@@ -44,6 +44,8 @@ body {
 
 .ui.grid {
   margin-top: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 
@@ -62,15 +64,15 @@ body {
 }
 
 .birdProfileTitle {
-  font-size: 44px;
+  font-size: 42px;
   color: white;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
 }
 
 .birdInfoBtnStyle {
   border-radius: 18px;
-  width: 273px;
+  width: 200px;
   background-color:#DB2B39 !important;
   flex-direction:row;
   justify-content:center;
@@ -80,27 +82,29 @@ body {
 
 .pokaiBtnStyle {
   border-radius: 18px;
-  width: 313px;
-  background-color:#F0CEA0 !important;
+  width: 200px;
+  background-color:rgb(17, 151, 51) !important;
   flex-direction:row;
   justify-content:center;
   color: white !important;
   font-family: 'Baloo Bhai', cursive !important;
+  margin-bottom: 10px !important;
 }
 
 .pokaiBtnStyleFound {
   border-radius: 18px;
-  width: 313px;
+  width: 200px;
   background-color:#F0CEA050 !important;
   flex-direction:row;
   justify-content:center;
   color: #F3A712 !important;
   font-family: 'Baloo Bhai', cursive !important;
+  margin-bottom: 10px !important;
 }
 
 .backBtnStyle {
   border-radius: 18px;
-  width: 180px;
+  width: 200px;
   background-color:#F3A712 !important;
   flex-direction:row;
   justify-content:center;

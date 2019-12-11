@@ -38,22 +38,24 @@ class BirdProfile extends React.Component {
     return this.state.birds.length === 0 ? null : <React.Fragment>
       <Segment vertical >
         <Grid container stackable className='birdProfileWrapper' >
-          <Grid.Row>
-            <BirdHeader />
-            <div>
-              <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
-            </div>
-            <BirdProfileTitle name={bird.name}/>
-            <Link to={this.toggleLink(bird)}>
-              <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='massive' className={this.toggleColor(bird)}>{this.togglePokai(bird)}</Button>
-            </Link>
-            <Link to={`/profile/${id}/info`}>
-              <BirdInfoBtn />
-            </Link>
-            <Link to="/">
-              <BackBtn />
-            </Link>
-          </Grid.Row>
+          <Grid.Column>
+            <Grid.Row>
+              <BirdHeader />
+              <div>
+                <img src={bird.image} alt={bird.name} width="412px" height="auto"/>
+              </div>
+              <BirdProfileTitle name={bird.name}/>
+              <Link to={this.toggleLink(bird)}>
+                <Button onClick= {() => this.handleClick(id)} style = {{ marginBottom: '10px' }} size='big' className={this.toggleColor(bird)}>{this.togglePokai(bird)}</Button>
+              </Link>
+              <Link to={`/profile/${id}/info`}>
+                <BirdInfoBtn />
+              </Link>
+              <Link to="/">
+                <BackBtn />
+              </Link>
+            </Grid.Row>
+          </Grid.Column>
         </Grid>
       </Segment>
     </React.Fragment>
