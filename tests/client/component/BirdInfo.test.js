@@ -14,6 +14,8 @@ const mockBirdsArray = [{
   name: 'Tui'
 }]
 
+window.scrollTo = () => {}
+
 describe('BirdInfo component test', () => {
   it('BirdInfo contains header, info card, and button components', () => {
     // Arrange

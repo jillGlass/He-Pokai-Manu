@@ -98,6 +98,7 @@ exports[`BirdInfo component test render unchanged from previous snapshot 1`] = `
             }
           }
         >
+          <ScrollToTop />
           <div
             className="birdInfoTextWrapper"
           >
