@@ -1,4 +1,4 @@
-# he Pokai Manu - A Bird Spotting App for Kids
+# He Pokai Manu - A Bird Spotting App for Kids
 
 As part of our final project at Ensprial Dev Academy my team of four built, tested and deployed He Pokai Manu in 6 days.
 
