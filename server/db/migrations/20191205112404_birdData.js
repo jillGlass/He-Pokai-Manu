@@ -5,6 +5,8 @@ exports.up = function (knex) {
     table.string('info')
     table.string('image')
     table.boolean('found')
+    table.string('category')
+    table.string('status')
   })
 }
 

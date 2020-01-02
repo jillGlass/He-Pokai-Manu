@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Perching /> component test render unchanged from previous snapshot 1`] = `
+<Perching>
+  <BirdHeader>
+    <Menu
+      borderless={true}
+      className="centerHeader"
+      fixed="top"
+      inverted={true}
+      style={
+        Object {
+          "backgroundColor": "#F3A712",
+        }
+      }
+    >
+      <div
+        className="ui borderless inverted top fixed centerHeader menu"
+        style={
+          Object {
+            "backgroundColor": "#F3A712",
+          }
+        }
+      >
+        <MenuItem>
+          <div
+            className="item"
+            onClick={[Function]}
+          >
+            He Pokai Manu
+          </div>
+        </MenuItem>
+      </div>
+    </Menu>
+  </BirdHeader>
+  <BirdGrid
+    birds={Array []}
+  >
+    <div
+      className="gridWrapUpper"
+    >
+      <Grid
+        className="gridWrap"
+        columns={2}
+        doubling={true}
+      >
+        <div
+          className="ui doubling two column grid gridWrap"
+        />
+      </Grid>
+    </div>
+  </BirdGrid>
+  <MainFooter
+    birds={Array []}
+    found={0}
+  >
+    <Menu
+      fixed="bottom"
+      inverted={true}
+      style={
+        Object {
+          "backgroundColor": "#F3A712",
+        }
+      }
+    >
+      <div
+        className="ui inverted bottom fixed menu"
+        style={
+          Object {
+            "backgroundColor": "#F3A712",
+          }
+        }
+      >
+        <Container
+          className="footer"
+        >
+          <div
+            className="ui container footer"
+          >
+            You have found 0 birds!
+            <br />
+            Can you find them all?
+            <HashRouter>
+              <Router
+                history={
+                  Object {
+                    "action": "POP",
+                    "block": [Function],
+                    "createHref": [Function],
+                    "go": [Function],
+                    "goBack": [Function],
+                    "goForward": [Function],
+                    "length": 1,
+                    "listen": [Function],
+                    "location": Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                    "push": [Function],
+                    "replace": [Function],
+                  }
+                }
+              >
+                <Link
+                  to="/instructions"
+                >
+                  <LinkAnchor
+                    href="#/instructions"
+                    navigate={[Function]}
+                  >
+                    <a
+                      href="#/instructions"
+                      onClick={[Function]}
+                    >
+                      <InstructionsBtn>
+                        <Button
+                          as="button"
+                          className="iconInstructions"
+                          icon={true}
+                          size="huge"
+                        >
+                          <Ref
+                            innerRef={
+                              Object {
+                                "current": <button
+                                  class="ui huge icon button iconInstructions"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    class="question circle outline icon"
+                                  />
+                                </button>,
+                              }
+                            }
+                          >
+                            <RefFindNode
+                              innerRef={
+                                Object {
+                                  "current": <button
+                                    class="ui huge icon button iconInstructions"
+                                  >
+                                    <i
+                                      aria-hidden="true"
+                                      class="question circle outline icon"
+                                    />
+                                  </button>,
+                                }
+                              }
+                            >
+                              <button
+                                className="ui huge icon button iconInstructions"
+                                onClick={[Function]}
+                              >
+                                <Icon
+                                  as="i"
+                                  name="question circle outline"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="question circle outline icon"
+                                    onClick={[Function]}
+                                  />
+                                </Icon>
+                              </button>
+                            </RefFindNode>
+                          </Ref>
+                        </Button>
+                      </InstructionsBtn>
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </Router>
+            </HashRouter>
+          </div>
+        </Container>
+      </div>
+    </Menu>
+  </MainFooter>
+</Perching>
+`;
