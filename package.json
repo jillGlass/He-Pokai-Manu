@@ -12,7 +12,8 @@
     "server": "node server",
     "start": "webpack && node server",
     "test": "jest --watchAll --noStackTrace",
-    "knex": "knex --knexfile server/db/knexfile.js"
+    "knex": "knex --knexfile server/db/knexfile.js",
+    "heroku-prebuild": "npm install --dev"
   },
   "babel": {
     "presets": [
