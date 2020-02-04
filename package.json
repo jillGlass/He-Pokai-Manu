@@ -64,6 +64,6 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "jest": "^24.9.0"
     
-  },
-  "heroku-run-build-script": true
+  }
+  
 }
