@@ -6,7 +6,7 @@ class BirdGrid extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <div className='gridWrapUpper'>
+        <div className='gridWrapUpper' >
           <Grid className='gridWrap' columns={2} doubling>
             {this.props.birds.map(bird =>
               <BirdCircle key={bird.name} {...bird} />
