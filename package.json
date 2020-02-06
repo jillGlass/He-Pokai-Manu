@@ -17,7 +17,7 @@
     "start": "npm run server",
     "postinstall": "webpack && npm run knex migrate:latest",
     "test": "jest --watchAll --noStackTrace",
-    "knex": "knex --knexfile server/db/knexfile.js"
+    "knex": "knex --knexfile knexfile.js"
   },
   "babel": {
     "presets": [
