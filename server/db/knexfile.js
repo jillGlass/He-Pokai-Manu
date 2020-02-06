@@ -41,30 +41,13 @@ module.exports = {
     }
   },
 
-  // production: {
-  //   client: 'pg',
-  //   connection: process.env.DATABASE_URL + `?ssl=true`,
-  //   migrations: {
-  //     directory: './migrations'
-  //   },
-  //   useNullAsDefault: true
-  // },
-
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user: 'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
+    client: 'pg',
+    connection: process.env.DATABASE_URL + `?ssl=true`,
     migrations: {
-      tableName: 'knex_migrations'
-    }
-  }
-}
+      directory: './migrations'
+    },
+    useNullAsDefault: true
+  },
 
 }
