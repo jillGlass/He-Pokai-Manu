@@ -6,11 +6,16 @@
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
+  "engines": {
+    "node": "10.17.0",
+    "npm": "6.11.3"
+  },
   "scripts": {
     "client": "webpack-dev-server --hot --inline",
     "dev": "nodemon . & webpack --watch",
-    "server": "node server",
-    "start": "webpack && node server",
+    "server": "node .",
+    "start": "npm run server",
+    "postinstall": "webpack && npm run knex migrate:latest",
     "test": "jest --watchAll --noStackTrace",
     "knex": "knex --knexfile server/db/knexfile.js",
     "build": "webpack"
@@ -47,6 +52,7 @@
     "express": "^4.17.1",
     "knex": "^0.20.8",
     "npm-check": "^5.9.0",
+    "npm-run-all": "^4.1.5",
     "pg": "^7.18.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
